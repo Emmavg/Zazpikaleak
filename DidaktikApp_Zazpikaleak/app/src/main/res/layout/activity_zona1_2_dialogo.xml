@@ -8,8 +8,7 @@
 
     <ImageView
         android:layout_width="100dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="200dp"
         android:src="@drawable/dindonfunko"
         android:layout_marginHorizontal="15dp" />
 
@@ -24,8 +23,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito"
-            android:text="@string/txtZona1_3Dingdong"
-            android:layout_marginTop="35dp"
+            android:text="@string/txtZona1_Dingdong"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:textColor="@color/black"
             android:textSize="15dp" />

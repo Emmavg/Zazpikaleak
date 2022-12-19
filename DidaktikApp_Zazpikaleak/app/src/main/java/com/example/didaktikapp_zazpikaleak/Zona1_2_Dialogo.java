@@ -6,13 +6,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-public class Zona1_3_Dialogo extends DialogFragment{
+public class Zona1_2_Dialogo extends DialogFragment{
 
     private OnDialogoConfirmacionListener listener;
 
@@ -21,8 +20,8 @@ public class Zona1_3_Dialogo extends DialogFragment{
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.activity_zona1_3_dialogo, null))
-                .setTitle("* Juego de memoria *")
+        builder.setView(inflater.inflate(R.layout.activity_zona1_2_dialogo, null))
+                .setTitle("Atención!!!")
                 .setPositiveButton("Aceptar",
                         new DialogInterface.OnClickListener() {
                             @Override

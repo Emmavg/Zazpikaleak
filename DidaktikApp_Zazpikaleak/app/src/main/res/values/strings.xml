@@ -21,10 +21,9 @@
 
     </string>
 
-    <string name="txtZona1_Dingdong">Ahora visitaremos el mercado y cuando terminéis de verlo todo saldremos y nos dirigiremos al puente de San Antón.\n\n
-        Cuando estéis allí pulsad el botón para que os enseñe un juego.</string>
+    <string name="txtZona1_Dingdong">Ahora visitaremos el mercado y una vez hayáis terminado de verlo todo, nos dirigiremos al puente de San Antón.\n\nCuando estéis allí,  pulsad el botón de aceptar para que os enseñe un juego.</string>
 
-    <string name="txtZona1_5">Proxima Parada</string>
+    <string name="txtZona1_5">Próxima Parada</string>
     <string name="txtZona1_5_DingDon">¿Ya sabéis de qué lugar se trata? ¡Pues, en marcha!</string>
     <string name="txtZona1_5_Hint">Arenal e Iglesia de San Nicolás</string>
 
@@ -32,9 +31,9 @@
 
     <!-- Strings Zona 2 -->
 
-    <string name="txtZona2_1_Titulo">El Arenal y la Iglesia de San Nicolas</string>
+    <string name="txtZona2_1_Titulo">El Arenal y la Iglesia de San Nicolás</string>
 
-    <string name="txtZona2_1_Explicacion">El objetivo aqui es intentar sacar una foto con la misma perspectiva que la foto antigua. ¿Podrás conseguirlo?</string>
+    <string name="txtZona2_1_Explicacion">El objetivo aquí es intentar sacar una foto con la misma perspectiva que la foto antigua. ¿Podrás conseguirlo?</string>
 
     <string name="txtZona2_1_Dingdon">¡Genial! Ahora tenéis que comparar la foto antigua y la actual.</string>
 
@@ -59,6 +58,8 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
     <string name="btnZona3_2_ORDEN">Orden</string>
     <string name="que_rima_mas_original">Que rima mas original</string>
     <string name="escribe_tu_rima">Escribe tu rima sobre la baldosa</string>
+    <string name="txtZona1_3Dingdong">En este juego deberás hacer de forma individual, parejas de las diferentes fotos de las paradas</string>
+    <string name="txtZona1_5_Explicacion">Para desvelar el lugar, haz click en la foto</string>
 
 
 </resources>

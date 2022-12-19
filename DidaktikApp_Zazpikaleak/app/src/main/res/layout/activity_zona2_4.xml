@@ -9,16 +9,17 @@
     tools:context=".Zona2_4">
 
     <TextView
-        android:id="@+id/txtZona2_4_Titulo"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/nunitomedium"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="40dp"
         android:text="@string/txtZona2_1_Titulo"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginBottom="20dp"/>
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <ImageView
                 android:id="@+id/imgZona2_4_Foto1"

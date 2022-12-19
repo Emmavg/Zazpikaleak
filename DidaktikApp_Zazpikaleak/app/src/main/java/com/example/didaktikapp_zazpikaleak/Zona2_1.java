@@ -9,11 +9,13 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 public class Zona2_1 extends AppCompatActivity {
 
     private Button zona2_1_btnCamara, zona2_1_btnSiguiente;
     private ImageView zona2_1_imgView;
+    private RelativeLayout dindon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class Zona2_1 extends AppCompatActivity {
         zona2_1_btnCamara = findViewById(R.id.zona2_1_btnCamara);
         zona2_1_imgView = findViewById(R.id.zona2_1_imageView);
         zona2_1_btnSiguiente = findViewById(R.id.zona2_1_btnSiguiente);
+
+        dindon = findViewById(R.id.zona2_1_dindon);
 
         zona2_1_btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +56,7 @@ public class Zona2_1 extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imgBitmap = (Bitmap) extras.get("data");
             zona2_1_imgView.setImageBitmap(imgBitmap);
+            dindon.setVisibility(View.VISIBLE);
         }
     }
 

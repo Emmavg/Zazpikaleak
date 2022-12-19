@@ -1,6 +1,7 @@
 package com.example.didaktikapp_zazpikaleak;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,14 +20,16 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class Zona1_1 extends AppCompatActivity {
+public class Zona1_1 extends AppCompatActivity implements Zona1_2_Dialogo.OnDialogoConfirmacionListener{
 
     private MediaPlayer audio;
     private ImageView imgZona1_1_Foto1,imgZona1_1_Foto2,imgZona1_1_Foto3,imgZona1_1_Foto4, imgZona1_1_Foto5;
     private Button btnZona1_1_Siguiente;
-    private TextView txtZona1_1_Narrador_1, txtZona1_1_Narrador_2;
+    private TextView txtZona1_1_Narrador_1, txtZona1_1_Narrador_2, explicacionDialogo;
+    private Zona1_2_Dialogo dialogo;
 
     //Las acciónes que queremos que se ejecuten cuando se inicia la actividad
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +43,7 @@ public class Zona1_1 extends AppCompatActivity {
         btnZona1_1_Siguiente = findViewById(R.id.btnZona1_1_Siguiente);
         txtZona1_1_Narrador_1 = findViewById(R.id.txtZona1_1_Narrador_1);
         txtZona1_1_Narrador_2 = findViewById(R.id.txtZona1_1_Narrador_2);
+        explicacionDialogo = findViewById(R.id.txtDialogo);
 
         final ScrollView scroller1 = findViewById(R.id.scrollerZona1_1_Narrador_1);
         final ScrollView scroller2 = findViewById(R.id.scrollerZona1_1_Narrador_2);
@@ -112,19 +116,20 @@ public class Zona1_1 extends AppCompatActivity {
         btnZona1_1_Siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Zona1_1.this, Zona1_3.class);
-                startActivity(intent);
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo = new Zona1_2_Dialogo();
+                dialogo.show(fragmentManager, "Informacion Parada");
                 audio.stop();
             }
         });
 
     }
 
-
-
-
-
-
+    @Override
+    public void onPossitiveButtonClick() {
+        Intent intent = new Intent(Zona1_1.this, Zona1_3.class);
+        startActivity(intent);
+    }
 
     //Parar el audio cuando se pulsa el boton back
     @Override
@@ -163,6 +168,4 @@ public class Zona1_1 extends AppCompatActivity {
         };
         timer.schedule(taskEverySplitSecond, 1, velocidad);
     }
-
-
 }

@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Zona1_3 extends AppCompatActivity {
+public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDialogoConfirmacionListener{
 
     // variables para los componentes de la vista
     private ImageButton imb00, imb01, imb02, imb03, imb04, imb05, imb06, imb07, imb08, imb09;
@@ -42,12 +42,15 @@ public class Zona1_3 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_zona1_3);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         dialogo = new Zona1_3_Dialogo();
-        dialogo.show(fragmentManager, "Informacion Parada");
-        setContentView(R.layout.activity_zona1_3);
-        init();
+        dialogo.show(fragmentManager, "Informacion Juego");
+
+        //init();
     }
+
 
     private void cargarTablero(){
         imb00 = findViewById(R.id.zona1_3_btn0);
@@ -80,7 +83,9 @@ public class Zona1_3 extends AppCompatActivity {
         botonReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                init();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo = new Zona1_3_Dialogo();
+                dialogo.show(fragmentManager, "Informacion Juego");
                 botonSiguiente.setVisibility(View.INVISIBLE);
             }
         });
@@ -196,4 +201,8 @@ public class Zona1_3 extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onPossitiveButtonClick() {
+        init();
+    }
 }
