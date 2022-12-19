@@ -150,7 +150,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:gravity="center_horizontal"
             android:layout_marginTop="50dp">
 
@@ -159,33 +159,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="reiniciar"></Button>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="50dp">
-
-            <TextView
-                android:id="@+id/zona1_3_texto_puntuacion"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="25dp"
-                android:layout_gravity="center">
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="50dp">
 
             <Button
                 android:id="@+id/zona1_3_btnSiguiente"
