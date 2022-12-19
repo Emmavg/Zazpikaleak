@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background= "@color/fondo"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/desarrollador_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Busca la pareja"/>
+
+    <Button
+        android:id="@+id/desarrollador_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parada2"/>
+
+    <Button
+        android:id="@+id/desarrollador_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leyenda"/>
+
+    <Button
+        android:id="@+id/desarrollador_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rima"/>
+
+    <Button
+        android:id="@+id/desarrollador_btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dibujar baldosa"/>
+
+    <Button
+        android:id="@+id/desarrollador_btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parada6"/>
+
+    <Button
+        android:id="@+id/desarrollador_btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sopa de letras"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@color/fondo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Zona4_1btnGrupos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Hacer Grupos" />
+
+    <EditText
+        android:id="@+id/Zona4_1txtRima"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/zona3_2_bordes_edittext"
+        android:enabled="false"
+        android:hint="@string/escribe_tu_rima"
+        android:outlineSpotShadowColor="@color/black"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/Zona4_1btnComprobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Comprobar" />
+
+    <RelativeLayout
+        android:id="@+id/Zona4_1relativeDidon"
+        android:layout_width="wrap_content"
+        android:layout_height="177dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/Zona4_1txtDingdong"
+            android:layout_width="361dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/bocadillo_cuadrado"
+            android:fontFamily="@font/nunitoregular"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="50dp"
+            android:text="@string/que_rima_mas_original"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/Zona4_1img_Dingdong"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:src="@drawable/dindonfunko" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Zona4_1btnSiguiente"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="-37dp"
+        android:text="Siguiente"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

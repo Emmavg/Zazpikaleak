@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+
+    <GridView
+        android:id="@+id/sopaLetras"
+        android:layout_width="348dp"
+        android:layout_height="433dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:numColumns="14"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201">
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Seleccionado"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/sopaLetras"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/zona7_txtbares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="Bares"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/zona7_txtcolumnas"
+        app:layout_constraintTop_toBottomOf="@+id/zona7_txtcolumnas"></TextView>
+
+    <TextView
+        android:id="@+id/zona7_txtrestaurantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Restaurantes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sopaLetras"></TextView>
+
+    <TextView
+        android:id="@+id/zona7_txtarcos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="Arcos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/zona7_txtbares"
+        app:layout_constraintTop_toBottomOf="@+id/zona7_txtbares"></TextView>
+
+    <TextView
+        android:id="@+id/zona7_txteuskaltzaindia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="Euskaltzaindia"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/zona7_txtmercadillo"
+        app:layout_constraintTop_toBottomOf="@+id/zona7_txtmercadillo"></TextView>
+
+    <TextView
+        android:id="@+id/zona7_txtcolumnas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:text="Columnas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sopaLetras"></TextView>
+
+    <TextView
+        android:id="@+id/zona7_txtmercadillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mercadillo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/zona7_txtcolumnas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sopaLetras"
+        app:layout_constraintTop_toBottomOf="@+id/sopaLetras"></TextView>
+
+    <TextView
+        android:id="@+id/zona7_txtpintxos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="Pintxos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/zona7_txteuskaltzaindia"
+        app:layout_constraintTop_toBottomOf="@+id/zona7_txteuskaltzaindia"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="Siguiente"
+        android:id="@+id/zona7_3btn_Siguiente"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

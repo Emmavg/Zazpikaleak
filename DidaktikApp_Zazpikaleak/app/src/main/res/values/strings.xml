@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">DidaktikApp_Zazpikaleak</string>
+
+    <!-- Strings Menu Inicio-->
+
+    <string name="btnMenuPrincipal">Empezar</string>
+    <string name="txtBienvenidaApp_Dingdong">¡Hola, me llamo Din Don y voy a ser vuestro guía durante esta aventura!</string>
+    <string name="creditos">\@Creditos</string>
+    <string name="creditosCJ">\tAiram Brito\n\tAlayn Marcos\n\tEmma Vélez\n\tMiguel Angel Fuente </string>
+    <string name="creditosUPV">\tAmaia Quintanilla\n\tLeire Taboada\n\tOlatz Sagastizabal</string>
+
+    <!-- Strings Zona 1 -->
+    <string name="txtZona1_Titulo">Mercado de la Ribera e iglesia y puente de San Antón</string>
+
+    <string name="txtZona1_Narrador_1">En el Casco Viejo y a orillas de la ría tenemos el Mercado de la Ribera. Siglos atrás era un mercado de calle, y no fue hasta el año 1929 cuando se inauguró el actual Mercado de la Ribera.</string>
+    <string name="txtZona1_Narrador_2"> ¿Sabíais que en 1990 ganó un Guinness World Records? En esa época, era el mercado cubierto más grande de Europa.
+        Dentro hay más de 50 puestos de comida. Además, a veces se hacen conciertos. ¿Habéis estado alguna vez? ¿Qué comprasteis?\n\n
+
+        Un poco más arriba del mercado está la iglesia de San Antón. No es la más antigua de Bilbao, pero sí una de las más importantes.
+        ¿Sabéis por qué? Esta iglesia y el puente de San Antón aparecen en el escudo de la ciudad y en el escudo del Athletic Club.
+
+    </string>
+
+    <string name="txtZona1_Dingdong">Ahora visitaremos el mercado y cuando terminéis de verlo todo saldremos y nos dirigiremos al puente de San Antón.\n\n
+        Cuando estéis allí pulsad el botón para que os enseñe un juego.</string>
+
+    <string name="txtZona1_5">Proxima Parada</string>
+    <string name="txtZona1_5_DingDon">¿Ya sabéis de qué lugar se trata? ¡Pues, en marcha!</string>
+    <string name="txtZona1_5_Hint">Arenal e Iglesia de San Nicolás</string>
+
+    <string name="btnZona1_Siguiente">Siguiente</string>
+
+    <!-- Strings Zona 2 -->
+
+    <string name="txtZona2_1_Titulo">El Arenal y la Iglesia de San Nicolas</string>
+
+    <string name="txtZona2_1_Explicacion">El objetivo aqui es intentar sacar una foto con la misma perspectiva que la foto antigua. ¿Podrás conseguirlo?</string>
+
+    <string name="txtZona2_1_Dingdon">¡Genial! Ahora tenéis que comparar la foto antigua y la actual.</string>
+
+
+    <string name="txtZona2_4_Titulo">El Arenal y la Iglesia de San Nicolas</string>
+
+    <string name="txtZona2_4_Narrador_1">La iglesia de San Nicolás se inauguró en el año 1756 y tardaron 13 años en construirla. En la fachada, es decir, la parte de fuera de la iglesia podemos encontrar la entrada principal y dos torres a cada lado.
+
+La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se llama así? Pues su nombre se debe a que antiguamente fue una especie de playa donde paraban los barcos.</string>
+
+
+    <string name="txtZona2_4_Narrador_2">Cuando aparecieron los barrios de alrededor, la playa se cerró y el lugar se llenó de jardines, bancos y fuentes. Más tarde, se empezaron a hacer carreteras y el paso del Metro por debajo del paseo.</string>
+
+
+    <string name="btnZona2_1_Camara">Sacar Foto</string>
+
+
+    <!-- Strings Zona 3 -->
+
+    <string name="btnZona3_2_HACER_LOS_GRUPOS">Hacer los grupos</string>
+    <string name="btnZona3_2_Escribe_leyenda">Escribe la leyenda</string>
+    <string name="btnZona3_2_ORDEN">Orden</string>
+    <string name="que_rima_mas_original">Que rima mas original</string>
+    <string name="escribe_tu_rima">Escribe tu rima sobre la baldosa</string>
+
+
+</resources>
