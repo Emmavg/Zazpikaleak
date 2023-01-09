@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="20dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -146,32 +146,60 @@
             </ImageButton>
 
         </TableRow>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="50dp">
-
-            <Button
-                android:id="@+id/zona1_3_botonJuegoReiniciar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="reiniciar"></Button>
-
-            <Button
-                android:id="@+id/zona1_3_btnSiguiente"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:visibility="invisible"
-                android:text="@string/btnZona1_Siguiente">
-            </Button>
-
-        </LinearLayout>
-
-
     </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/zona1_3_dindon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bocadillo_cuadrado"
+                android:fontFamily="@font/nunitoregular"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="50dp"
+                android:text="@string/txtBienHecho"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:src="@drawable/dindonfunko" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/zona1_3_botonJuegoReiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reiniciar"></Button>
+
+        <Button
+            android:id="@+id/zona1_3_btnSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:text="@string/btnZona1_Siguiente">
+        </Button>
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>

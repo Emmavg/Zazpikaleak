@@ -60,6 +60,8 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
     <string name="escribe_tu_rima">Escribe tu rima sobre la baldosa</string>
     <string name="txtZona1_3Dingdong">En este juego deberás hacer de forma individual, parejas de las diferentes fotos de las paradas</string>
     <string name="txtZona1_5_Explicacion">Para desvelar el lugar, haz click en la foto</string>
+    <string name="txtBienHecho">¡Bien hecho!</string>
+    <string name="title_activity_mapa">MapaActivity</string>
 
 
 </resources>
