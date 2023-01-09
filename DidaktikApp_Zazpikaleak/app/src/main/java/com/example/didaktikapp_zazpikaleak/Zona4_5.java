@@ -13,63 +13,76 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Zona4_5 extends AppCompatActivity {
 
+    private  int anchoTotal;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Vista vista = new Vista(this);
         setContentView(R.layout.activity_zona4_5);
-        vista.setBackgroundColor(Color.parseColor("#ffc771"));
+        Vista vista = new Vista(this);
         setContentView(vista);
     }
 
+
+
+
     class Vista extends View {
-        float x = 50;
-        float y = 50;
+        float x = 100;
+        float y = 100;
         String accion = "accion";
         Path path = new Path();
-        int anchoPantalla;
-        public Vista(Context context) {
+
+        public Vista (Context context){
             super(context);
         }
 
 
-        public void onDraw(Canvas canvas) {
+        public void onDraw(Canvas canvas){
             Paint paint = new Paint();
+
+            //Seleccionamos el tipo de linea para dibujar
             paint.setStyle(Paint.Style.STROKE);
-            paint.setStrokeWidth(40);
+
+            //Seleccionamos el grosor de las lineas
+            paint.setStrokeWidth(15);
+
+            //Seleccionamos el color de las lineas
             paint.setColor(Color.BLACK);
 
             int ancho = canvas.getWidth();
-            anchoPantalla = canvas.getWidth();
-            if(accion=="down")
-                path.moveTo(x,y);
-            if(accion=="move")
-                path.lineTo(x,y);
+            anchoTotal=canvas.getWidth();
 
-
+            //Dependiendo del movimiento detectado dibuja de una manera u otra
+            if(accion=="down"){
+                path.moveTo(x, y);
+            }
+            if(accion=="move"){
+                path.lineTo(x, y);
+            }
+            //Dibujamos el cuadrado para poder dibujar
             canvas.drawRect(100, 1500, ancho-100, 700, paint);
+
+
             canvas.drawPath(path, paint);
 
         }
 
+        public boolean onTouchEvent(MotionEvent e){
 
-        public boolean onTouchEvent(MotionEvent e) {
-            x = e.getX();
-            y = e.getY();
-
-            if(x>=100 && x<=anchoPantalla-100  && y>=700 && y<=1500){
-                if (e.getAction() == MotionEvent.ACTION_DOWN) {
-                    accion = "down";
+            //Comprobamos que donde toca de la pantalla esta dentro del cuadrado marcado
+            if(e.getY()<=1500 && e.getY()>=700 && e.getX()>=100 && e.getX()<=anchoTotal-100){
+                x = e.getX();
+                y = e.getY();
+                //Comprobamos el movimiento del dedo
+                if(e.getAction()== MotionEvent.ACTION_DOWN){
+                    accion="down";
                 }
-                if (e.getAction() == MotionEvent.ACTION_MOVE) {
-                    accion = "move";
+                if(e.getAction()== MotionEvent.ACTION_MOVE){
+                    accion="move";
                 }
                 invalidate();
             }
 
-
             return true;
         }
-
     }
 }
