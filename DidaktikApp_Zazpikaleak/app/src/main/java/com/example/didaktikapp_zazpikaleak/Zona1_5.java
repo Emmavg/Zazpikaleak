@@ -28,6 +28,9 @@ public class Zona1_5 extends AppCompatActivity {
         pista = findViewById(R.id.txtZona1_5_Hint);
         btnSiguiente = findViewById(R.id.zona1_5_btnSiguiente);
 
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(this, "ZazpikaleakDB", null, 1);
+
+
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -56,6 +59,11 @@ public class Zona1_5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Zona1_5.this, Zona2_1.class);
+
+                //Creas un objeto dao y marcas la actividad como hecha en la bbdd
+                ProgresoDao pd = new ProgresoDao();
+                pd.actHecha(zazpidbh, "Actividad 1");
+
                 startActivity(intent);
             }
         });

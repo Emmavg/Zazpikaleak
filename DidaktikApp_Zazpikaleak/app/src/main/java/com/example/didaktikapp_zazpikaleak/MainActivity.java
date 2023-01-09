@@ -24,9 +24,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Generamos la conexion de la BBDD
 
-        //Abrimos la base de datos "DBUsuarios" en modo de escritura
-        UsuariosSQLiteHelper zazpidbh = new UsuariosSQLiteHelper(this, "DBZazpikaleak", null, 1);
-        SQLiteDatabase db = zazpidbh.getWritableDatabase();
+        //Abrimos la base de datos en modo de escritura solo lo haces la primera vez
+//        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(this, "ZazpikaleakDB", null, 1);
+//        ProgresoDao pd = new ProgresoDao();
+//        pd.crearBBDD(zazpidbh);
 
         titulo = findViewById(R.id.inicial_txt);
         empezar = findViewById(R.id.btnEmpezar);

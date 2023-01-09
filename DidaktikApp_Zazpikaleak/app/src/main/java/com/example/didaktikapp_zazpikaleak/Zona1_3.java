@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
     // variables para los componentes de la vista
     private ImageButton imb00, imb01, imb02, imb03, imb04, imb05, imb06, imb07, imb08, imb09;
     private ImageButton[] tablero = new ImageButton[10];
+    private RelativeLayout rlayout;
     private Button botonReiniciar, botonSiguiente;
     private MediaPlayer audio;
     private int aciertos;
@@ -43,6 +45,7 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zona1_3);
+        rlayout = findViewById(R.id.zona1_3_dindon);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         dialogo = new Zona1_3_Dialogo();
@@ -143,8 +146,7 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
                 if(aciertos == imagenes.length){
                     //Boton Siguiente Visible
                     botonSiguiente.setVisibility(View.VISIBLE);
-                    Toast toast = Toast.makeText(getApplicationContext(), "Has ganado!!", Toast.LENGTH_LONG);
-                    toast.show();
+                    rlayout.setVisibility(View.VISIBLE);
                     //Audio Din Dong Feliz
                     audio = MediaPlayer.create(Zona1_3.this, R.raw.audio_zona1_dindongfeliz);
                     audio.start();
