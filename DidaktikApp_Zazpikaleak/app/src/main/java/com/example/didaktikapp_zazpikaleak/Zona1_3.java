@@ -49,7 +49,7 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         dialogo = new Zona1_3_Dialogo();
-        dialogo.show(fragmentManager, "Informacion Juego");
+        dialogo.show(fragmentManager, "Información Juego");
 
         //init();
     }

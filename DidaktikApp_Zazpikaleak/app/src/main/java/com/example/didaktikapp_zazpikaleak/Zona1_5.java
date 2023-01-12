@@ -58,7 +58,7 @@ public class Zona1_5 extends AppCompatActivity {
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Zona1_5.this, Zona2_1.class);
+                Intent intent = new Intent(Zona1_5.this, MapaActivity.class);
 
                 //Creas un objeto dao y marcas la actividad como hecha en la bbdd
                 ProgresoDao pd = new ProgresoDao();
