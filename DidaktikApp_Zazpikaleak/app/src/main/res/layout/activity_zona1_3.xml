@@ -18,188 +18,199 @@
         android:textColor="@color/black"
         android:textSize="20dp" />
 
-    <TableLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginTop="20dp">
+        android:layout_height="match_parent">
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/zona1_3_btn0"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="0">
-            </ImageButton>
-            <ImageButton
-                android:id="@+id/zona1_3_btn1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginHorizontal="10dp"
-                android:background="@color/fondo"
-                android:layout_column="1">
-            </ImageButton>
-            <ImageButton
-                android:id="@+id/zona1_3_btn2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="2">
-            </ImageButton>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/zona1_3_btn3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="0">
-            </ImageButton>
-            <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginHorizontal="10dp"
-                android:visibility="invisible"
-                android:background="@color/fondo"
-                android:layout_column="1">
-            </ImageButton>
-            <ImageButton
-                android:id="@+id/zona1_3_btn4"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="2">
-            </ImageButton>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/zona1_3_btn5"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="0">
-            </ImageButton>
-            <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginHorizontal="10dp"
-                android:visibility="invisible"
-                android:background="@color/fondo"
-                android:layout_column="1">
-            </ImageButton>
-            <ImageButton
-                android:id="@+id/zona1_3_btn6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="2">
-            </ImageButton>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/zona1_3_btn7"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="0">
-            </ImageButton>
-            <ImageButton
-                android:id="@+id/zona1_3_btn8"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginHorizontal="10dp"
-                android:background="@color/fondo"
-                android:layout_column="1">
-            </ImageButton>
-            <ImageButton
-                android:id="@+id/zona1_3_btn9"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/fondo"
-                android:layout_column="2">
-            </ImageButton>
-
-        </TableRow>
-    </TableLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
-
-        <RelativeLayout
-            android:id="@+id/zona1_3_dindon"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="invisible"
-            android:layout_marginHorizontal="20dp">
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <TextView
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/bocadillo_cuadrado"
-                android:fontFamily="@font/nunitoregular"
-                android:paddingHorizontal="30dp"
-                android:paddingVertical="50dp"
-                android:text="@string/txtBienHecho"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="right"
-                android:src="@drawable/dindonfunko" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
 
-        </RelativeLayout>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn0"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="0">
+                    </ImageButton>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@color/fondo"
+                        android:layout_column="1">
+                    </ImageButton>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="2">
+                    </ImageButton>
 
-        <Button
-            android:id="@+id/zona1_3_botonJuegoReiniciar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="reiniciar"></Button>
+                </TableRow>
 
-        <Button
-            android:id="@+id/zona1_3_btnSiguiente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="invisible"
-            android:text="@string/btnZona1_Siguiente">
-        </Button>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
 
-    </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="0">
+                    </ImageButton>
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:visibility="invisible"
+                        android:background="@color/fondo"
+                        android:layout_column="1">
+                    </ImageButton>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="2">
+                    </ImageButton>
 
+                </TableRow>
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
 
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="0">
+                    </ImageButton>
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:visibility="invisible"
+                        android:background="@color/fondo"
+                        android:layout_column="1">
+                    </ImageButton>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="2">
+                    </ImageButton>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="0">
+                    </ImageButton>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@color/fondo"
+                        android:layout_column="1">
+                    </ImageButton>
+                    <ImageButton
+                        android:id="@+id/zona1_3_btn9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/fondo"
+                        android:layout_column="2">
+                    </ImageButton>
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/zona1_3_dindon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_marginHorizontal="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/bocadillo_cuadrado"
+                        android:fontFamily="@font/nunitoregular"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="50dp"
+                        android:text="@string/txtBienHecho"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/dindonfunko" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/zona1_3_botonJuegoReiniciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reiniciar"></Button>
+
+                <Button
+                    android:id="@+id/zona1_3_btnSiguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:text="@string/btnZona1_Siguiente">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

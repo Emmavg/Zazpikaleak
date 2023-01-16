@@ -103,7 +103,6 @@ public class Zona1_1 extends AppCompatActivity implements Zona1_2_Dialogo.OnDial
                             public void onCompletion(MediaPlayer mediaPlayer) {
 //                                imgZona1_1_Foto5.setVisibility(View.VISIBLE);
 
-
                             }
                         });
 
@@ -127,7 +126,7 @@ public class Zona1_1 extends AppCompatActivity implements Zona1_2_Dialogo.OnDial
 
     @Override
     public void onPossitiveButtonClick() {
-        Intent intent = new Intent(Zona1_1.this, Zona1_3.class);
+        Intent intent = new Intent(Zona1_1.this, MapaActivity.class);
         startActivity(intent);
     }
 

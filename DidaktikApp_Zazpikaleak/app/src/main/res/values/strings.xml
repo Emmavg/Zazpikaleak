@@ -10,7 +10,7 @@
     <string name="creditosUPV">\tAmaia Quintanilla\n\tLeire Taboada\n\tOlatz Sagastizabal</string>
 
     <!-- Strings Zona 1 -->
-    <string name="txtZona1_Titulo">Mercado de la Ribera e iglesia y puente de San Antón</string>
+    <string name="txtZona1_Titulo">Mercado de la Ribera e Iglesia y Puente de San Antón</string>
 
     <string name="txtZona1_Narrador_1">En el Casco Viejo y a orillas de la ría tenemos el Mercado de la Ribera. Siglos atrás era un mercado de calle, y no fue hasta el año 1929 cuando se inauguró el actual Mercado de la Ribera.</string>
     <string name="txtZona1_Narrador_2"> ¿Sabíais que en 1990 ganó un Guinness World Records? En esa época, era el mercado cubierto más grande de Europa.
@@ -21,7 +21,7 @@
 
     </string>
 
-    <string name="txtZona1_Dingdong">Ahora visitaremos el mercado y una vez hayáis terminado de verlo todo, nos dirigiremos al puente de San Antón.\n\nCuando estéis allí,  pulsad el botón de aceptar para que os enseñe un juego.</string>
+    <string name="txtZona1_Dingdong">Ahora visitaremos el mercado y una vez hayáis terminado de verlo todo, nos dirigiremos al puente de San Antón.\n\nCuando estéis allí, pulsad el botón de la parada correspondiente para que os enseñe un juego.</string>
 
     <string name="txtZona1_5">Próxima Parada</string>
     <string name="txtZona1_5_DingDon">¿Ya sabéis de qué lugar se trata? ¡Pues, en marcha!</string>
@@ -52,6 +52,19 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
 
 
     <!-- Strings Zona 3 -->
+
+    <string name="txtZona3_1_Titulo">Ría de Bilbao</string>
+
+    <string name="txtZona3_1_Narrador_1">¿Conocéis la leyenda de la ría de Bilbao? Un padre y una madre llamados Francisco y María, tenían cuatro hijos. María mandó a uno de sus cuatro hijos a Bilbao a estudiar.
+        Un día por la noche, se fue a nadar con unos amigos. Había habido inundaciones y la corriente se llevó al joven, por lo que desapareció y no se volvió a saber más de él. </string>
+
+    <string name="txtZona3_1_Narrador_2">Cinco años después, unos pescadores dijeron que habían visto un animal acuático que parecía humano. Tras ser visto otras veces, capturaron al animal y vieron que era un hombre con escamas y forma de pez.
+    No se volvió a hablar de él y tras ser expuesto como monstruo de feria, desapareció en el mar y no se supo nunca nada más sobre él. ¿Qué os parece esta leyenda? ¿Habéis oído hablar de ella?Cinco años después, unos pescadores dijeron que habían visto un animal acuático que parecía humano.
+        Tras ser visto otras veces, capturaron al animal y vieron que era un hombre con escamas y forma de pez.</string>
+
+    <string name="txtZona3_1_Narrador_3">Este chico se ahogó en las inundaciones que hubo en el siglo XVII, pero ¿sabéis que hubo nuevas inundaciones más recientemente? Durante la tarde y noche del 26 de Agosto de 1983 y celebrándose la Aste Nagusia de Bilbao, llovió mucho y la ría se desbordó.
+
+Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de barro y hubo gente que murió o acabó con heridas graves. Aunque hubo mucha gente que ayudó, tardaron muchos días en limpiarlo todo.</string>
 
     <string name="btnZona3_2_HACER_LOS_GRUPOS">Hacer los grupos</string>
     <string name="btnZona3_2_Escribe_leyenda">Escribe la leyenda</string>

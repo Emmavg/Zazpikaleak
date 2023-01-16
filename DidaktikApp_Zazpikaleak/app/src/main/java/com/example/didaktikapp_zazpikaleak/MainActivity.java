@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         empezar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, Zona1_1.class);
+                Intent i = new Intent(MainActivity.this, MapaActivity.class);
                 startActivity(i);
             }
         });
