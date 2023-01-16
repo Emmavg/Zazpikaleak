@@ -47,7 +47,7 @@ public class Zona7_3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zona7_3);
+        setContentView(R.layout.activity_zona7_3_linear);
         cargarMapa();
 
 
@@ -150,10 +150,4 @@ public class Zona7_3 extends AppCompatActivity {
         }
         return true;
     }
-
-
-
-
-
-
 }

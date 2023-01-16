@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/layZona4_5_lienzo"
+        android:layout_width="match_parent"
+        android:layout_height="579dp"></View>
+
+    <Button
+        android:id="@+id/btnZona4_5_Siguiente"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:text="Siguiente"></Button>
 
 </LinearLayout>

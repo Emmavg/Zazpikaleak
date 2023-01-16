@@ -8,18 +8,25 @@ import android.graphics.Path;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Zona4_5 extends AppCompatActivity {
 
     private  int anchoTotal;
+    private View liezo;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zona4_5);
+
         Vista vista = new Vista(this);
+        vista.setBackgroundColor(Color.parseColor("#ffc771"));
         setContentView(vista);
+//        liezo= findViewById(R.id.layZona4_5_lienzo);
+//        vista.setBackgroundColor(Color.parseColor("#ffc771"));
+//        liezo=vista;
     }
 
 
@@ -43,7 +50,7 @@ public class Zona4_5 extends AppCompatActivity {
             paint.setStyle(Paint.Style.STROKE);
 
             //Seleccionamos el grosor de las lineas
-            paint.setStrokeWidth(15);
+            paint.setStrokeWidth(25);
 
             //Seleccionamos el color de las lineas
             paint.setColor(Color.BLACK);
@@ -86,3 +93,4 @@ public class Zona4_5 extends AppCompatActivity {
         }
     }
 }
+
