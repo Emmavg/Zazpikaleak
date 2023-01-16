@@ -34,8 +34,8 @@
                 android:id="@+id/imgZona2_4_Foto1"
                 android:layout_width="186dp"
                 android:layout_height="155dp"
-                android:layout_marginTop="12dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="12dp"
                 app:srcCompat="@drawable/zona2_4_foto1" />
 
             <ScrollView
@@ -60,13 +60,12 @@
             </ScrollView>
 
 
-
             <ImageView
                 android:id="@+id/imgZona2_4_Foto2"
                 android:layout_width="186dp"
                 android:layout_height="155dp"
-                android:layout_marginTop="12dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="12dp"
                 android:visibility="invisible"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/scrollerZona1_1_Narrador_1"
@@ -92,6 +91,16 @@
                     <requestFocus />
                 </TextView>
             </ScrollView>
+
+            <Button
+                android:id="@+id/zona2_1_btnSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="@string/btnZona1_Siguiente">
+            </Button>
 
         </LinearLayout>
     </ScrollView>

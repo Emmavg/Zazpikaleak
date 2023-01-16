@@ -75,16 +75,16 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
                         startActivity(intent);
                     }
 
-//                    if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
-//                        Intent intent = new Intent(MapaActivity.this, Zona1_3.class);
-//                        startActivity(intent);
-//                    }
-//
-//                    if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
-//                        Intent intent = new Intent(MapaActivity.this, Zona1_3.class);
-//                        startActivity(intent);
-//                    }
-//
+                    if (marker.getTitle().equals("El Arenal")) {
+                        Intent intent = new Intent(MapaActivity.this, Zona2_1.class);
+                        startActivity(intent);
+                    }
+
+                    if (marker.getTitle().equals("Ría de Bilbao")) {
+                        Intent intent = new Intent(MapaActivity.this, Zona3_1.class);
+                        startActivity(intent);
+                    }
+
 //                    if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
 //                        Intent intent = new Intent(MapaActivity.this, Zona1_3.class);
 //                        startActivity(intent)

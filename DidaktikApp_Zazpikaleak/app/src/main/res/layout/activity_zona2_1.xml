@@ -101,6 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="@string/btnZona1_Siguiente">
             </Button>
 
