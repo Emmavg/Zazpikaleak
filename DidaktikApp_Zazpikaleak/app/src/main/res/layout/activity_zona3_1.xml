@@ -30,26 +30,142 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:id="@+id/scrollerZona3_1_Narrador_1"
+                    android:layout_width="216dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:id="@+id/txtZona3_1_Narrador_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunitoregular"
+                        android:gravity="bottom"
+                        android:maxLines="10"
+                        android:scrollbars="vertical">
+
+                        <requestFocus />
+                    </TextView>
+                </ScrollView>
+
+                <ImageView
+                    android:id="@+id/imgZona3_1_Foto1"
+                    android:layout_width="112dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="15dp"
+                    app:srcCompat="@drawable/zona3_1_ahogo" />
+            </LinearLayout>
+
             <ScrollView
-                android:id="@+id/scrollerZona3_1_Narrador_1"
+                android:id="@+id/scrollerZona3_1_Narrador_2"
                 android:layout_width="342dp"
                 android:layout_height="96dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp">
 
                 <TextView
-                    android:id="@+id/txtZona3_1_Narrador_1"
+                    android:id="@+id/txtZona3_1_Narrador_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="20dp"
+                    android:maxLines="5"
                     android:gravity="bottom"
-                    android:maxLines="10"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitoregular"
                     android:scrollbars="vertical">
-
-                    <requestFocus />
                 </TextView>
             </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgZona3_1_Foto2"
+                    android:layout_width="179dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/zona3_1_pesca" />
+
+                <ImageView
+                    android:id="@+id/imgZona3_1_Foto3"
+                    android:layout_width="179dp"
+                    android:layout_height="90dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/zona3_1_pez" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollerZona3_1_Narrador_3"
+                android:layout_width="342dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/txtZona3_1_Narrador_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunitoregular"
+                    android:scrollbars="vertical">
+                </TextView>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgZona3_1_Foto4"
+                    android:layout_width="179dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/zona3_1_innu1" />
+
+                <ImageView
+                    android:id="@+id/imgZona3_1_Foto5"
+                    android:layout_width="179dp"
+                    android:layout_height="90dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/zona3_1_innu2" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnZona3_1_Siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/btnZona1_Siguiente"
+                android:layout_gravity="end"/>
 
         </LinearLayout>
     </ScrollView>

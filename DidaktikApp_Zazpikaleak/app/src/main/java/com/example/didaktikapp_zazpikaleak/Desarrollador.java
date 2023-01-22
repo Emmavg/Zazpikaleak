@@ -44,7 +44,7 @@ public class Desarrollador extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Desarrollador.this, Zona3_2.class);
+                Intent i = new Intent(Desarrollador.this, Zona3_1.class);
                 startActivity(i);
             }
         });
@@ -52,7 +52,7 @@ public class Desarrollador extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Desarrollador.this, Zona4_1.class);
+                Intent i = new Intent(Desarrollador.this, Zona4_6.class);
                 startActivity(i);
             }
         });
@@ -60,23 +60,23 @@ public class Desarrollador extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Desarrollador.this, Zona4_5.class);
+                Intent i = new Intent(Desarrollador.this, Zona5_2.class);
                 startActivity(i);
          }
        });
 
-//        btn6.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(Desarrollador.this, Zona1_3.class);
-//                startActivity(i);
-//            }
-//        });
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Desarrollador.this, Zona6_4.class);
+                startActivity(i);
+            }
+        });
 
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Desarrollador.this, Zona7_3.class);
+                Intent i = new Intent(Desarrollador.this, Zona7_1.class);
                 startActivity(i);
             }
         });

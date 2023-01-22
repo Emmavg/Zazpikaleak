@@ -59,11 +59,9 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
         Un día por la noche, se fue a nadar con unos amigos. Había habido inundaciones y la corriente se llevó al joven, por lo que desapareció y no se volvió a saber más de él. </string>
 
     <string name="txtZona3_1_Narrador_2">Cinco años después, unos pescadores dijeron que habían visto un animal acuático que parecía humano. Tras ser visto otras veces, capturaron al animal y vieron que era un hombre con escamas y forma de pez.
-    No se volvió a hablar de él y tras ser expuesto como monstruo de feria, desapareció en el mar y no se supo nunca nada más sobre él. ¿Qué os parece esta leyenda? ¿Habéis oído hablar de ella?Cinco años después, unos pescadores dijeron que habían visto un animal acuático que parecía humano.
-        Tras ser visto otras veces, capturaron al animal y vieron que era un hombre con escamas y forma de pez.</string>
+    No se volvió a hablar de él y tras ser expuesto como monstruo de feria, desapareció en el mar y no se supo nunca nada más sobre él. ¿Qué os parece esta leyenda? ¿Habéis oído hablar de ella?</string>
 
     <string name="txtZona3_1_Narrador_3">Este chico se ahogó en las inundaciones que hubo en el siglo XVII, pero ¿sabéis que hubo nuevas inundaciones más recientemente? Durante la tarde y noche del 26 de Agosto de 1983 y celebrándose la Aste Nagusia de Bilbao, llovió mucho y la ría se desbordó.
-
 Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de barro y hubo gente que murió o acabó con heridas graves. Aunque hubo mucha gente que ayudó, tardaron muchos días en limpiarlo todo.</string>
 
     <string name="btnZona3_2_HACER_LOS_GRUPOS">Hacer los grupos</string>
@@ -76,5 +74,38 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtBienHecho">¡Bien hecho!</string>
     <string name="title_activity_mapa">MapaActivity</string>
 
+
+    <!-- Strings Zona 4 -->
+
+    <string name="txtZona4_6_Titulo">La Baldosa de Bilbao</string>
+
+    <string name="txtZona4_6_Narrador_1">¿Sabéis que tiene de especial este suelo? La baldosa de Bilbao aparece en objetos como prendas de vestir, complementos, pasteles y en la canción que La Otxoa le dedicó que ya habéis escuchado.</string>
+
+    <string name="txtZona4_6_Narrador_2">¿No habéis visto este año en Aste Nagusi este tipo de pañuelos?</string>
+
+    <string name="txtZona4_6_Narrador_3">La baldosa tiene un dibujo muy especial,  hay un círculo en el medio rodeado de otros cuatro círculos más pequeños, para que el agua se deslice. Se crearon sobre 1920 con materiales cogidos de los Altos Hornos de Vizcaya. ¿Cuántas baldosas creeis que puede haber en Bilbao? 66 millones de baldosas están puestas por las aceras de Bilbao.</string>
+
+    <!-- Strings Zona 5 -->
+
+    <string name="txtZona5_2_Titulo">Marijaia</string>
+
+    <string name="txtZona5_2_Narrador_1">¿Qué sabéis sobre Marijaia? Marijaia es el icono de Aste Nagusia. Lleva los brazos en alto para representar que siempre está bailando. Cada año se crea una nueva Marijaia. Su momento más importante es en el txupinazo, cuando aparece cada año para presentarse a la gente y dar inicio a las fiestas.
+        Pero podéis ver a Marijaia otros días también, ya que Marijaia puede ser encontrada por todo Bilbao, sacándose fotografías. El último día de fiestas, queman a Marijaia durante un paseo por la Ría.</string>
+
+    <!-- Strings Zona 6 -->
+
+    <string name="txtZona6_4_Titulo">Calle Pelota y la Hucha de los Txikiteros</string>
+
+    <string name="txtZona6_4_Narrador_1">El Casco Viejo tiene muchos bares que están en la ruta de los pintxos o del txikiteo. Los txikiteros son un grupo de amigos que quedan en el Casco Viejo para comer pintxos y tomar txikitos (vasos de vino), de ahí su nombre Al principio y durante muchos años fue una tradición totalmente masculina y las mujeres no podían hacerlo. En los últimos años las mujeres han podido ir con los hombres.</string>
+
+    <string name="txtZona6_4_Narrador_2">Los txikiteros y las txikiteras para pagar ponen un bote y al final del día, el dinero que les ha sobrado de ese bote lo echan a la hucha solidaria de la calle Pelota. Cualquier persona puede meter dinero ya que cada 11 de octubre (Día del Txikitero) se abre la hucha para recoger los ahorros y donarlos a causas benéficas. ¿Qué os parece esta idea? </string>
+
+    <!-- Strings Zona 7 -->
+
+    <string name="txtZona7_1_Titulo">Plaza Nueva</string>
+
+    <string name="txtZona7_1_Narrador_1">¿Alguna vez habéis estado aquí? ¿Para qué habéis venido? La Plaza Nueva es un lugar increíble para los que coleccionan cosas. Todos los domingos hay un mercadillo y se pueden encontrar todo tipo de antigüedades, monedas, sellos, flores, etc. </string>
+
+    <string name="txtZona7_1_Narrador_2">Además, los domingos por la mañana es muy habitual ver a niños y niñas como vosotros y vosotras intercambiando cromos. ¿Habéis hecho alguna colección de cromos y habéis venido a la Plaza Nueva a intercambiarlos? </string>
 
 </resources>
