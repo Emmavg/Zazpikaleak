@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".Zona8_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="217dp"
+            android:layout_height="match_parent"
+            android:background="@color/fondo"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/lblmercado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:tag="mercado"
+                android:text="@string/lblZona8_2_MercadoDeLaRivera"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblpuente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:tag="puente"
+                android:text="@string/Zona8_2_PuenteeIglesiadeSanAntón"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbliglesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:tag="iglesia"
+                android:text="@string/Zona8_2_IglesiaDeSanNicolas"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblmarijaia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:tag="marijaia"
+                android:text="@string/Zona8_2_Marijaia"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblrivera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:tag="rivera"
+                android:text="@string/Zona8_2_RiaDeBilbao"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblhucha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="hucha"
+                android:text="@string/Zona8_2_HuchaDeTxikitero"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/lblteatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="teatro"
+                android:text="@string/Zona8_2_TeatroArriaga"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/lblplaza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="plaza"
+                android:text="@string/Zona8_2_PlazaNueva"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="iglesia">
+
+            <ImageView
+                android:id="@+id/Iglesia"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:tag="iglesia"
+                app:srcCompat="@drawable/zona8_2_iglesia_san_nicolas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="puente">
+
+            <ImageView
+                android:id="@+id/puente"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:tag="puente"
+                app:srcCompat="@drawable/zona8_2_puente_iglesia_san_anton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LYmercado"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:tag="mercado">
+
+            <ImageView
+                android:id="@+id/mercado"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:tag="mercado"
+                app:srcCompat="@drawable/zona8_2_mercado_de_la_ribera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Lrivera"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="rivera">
+
+            <ImageView
+                android:id="@+id/rivera"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_ria_de_bilbao" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Lmarijaia"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="marijaia">
+
+            <ImageView
+                android:id="@+id/marijaia"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_marijaia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Lhucha"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="hucha">
+
+            <ImageView
+                android:id="@+id/hucha"
+                android:layout_width="110dp"
+                android:layout_height="118dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_hucha_de_txikitero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Lteatro"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="teatro">
+
+            <ImageView
+                android:id="@+id/teatro"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_teatro_arriaga" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Lplaza"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="plaza">
+
+            <ImageView
+                android:id="@+id/plaza"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_plaza_nueva" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

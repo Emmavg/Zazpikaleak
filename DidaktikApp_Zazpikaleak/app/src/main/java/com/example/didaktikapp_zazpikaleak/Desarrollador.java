@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class Desarrollador extends AppCompatActivity {
 
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7;
+    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class Desarrollador extends AppCompatActivity {
         btn5 = findViewById(R.id.desarrollador_btn5);
         btn6 = findViewById(R.id.desarrollador_btn6);
         btn7 = findViewById(R.id.desarrollador_btn7);
+        btn8 = findViewById(R.id.desarrollador_btn8);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +78,14 @@ public class Desarrollador extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Desarrollador.this, Zona7_1.class);
+                startActivity(i);
+            }
+        });
+
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Desarrollador.this, Zona8_2.class);
                 startActivity(i);
             }
         });

@@ -111,6 +111,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Zona8_2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Desarrollador"
             android:exported="false">
             <meta-data

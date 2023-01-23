@@ -107,5 +107,13 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtZona7_1_Narrador_1">¿Alguna vez habéis estado aquí? ¿Para qué habéis venido? La Plaza Nueva es un lugar increíble para los que coleccionan cosas. Todos los domingos hay un mercadillo y se pueden encontrar todo tipo de antigüedades, monedas, sellos, flores, etc. </string>
 
     <string name="txtZona7_1_Narrador_2">Además, los domingos por la mañana es muy habitual ver a niños y niñas como vosotros y vosotras intercambiando cromos. ¿Habéis hecho alguna colección de cromos y habéis venido a la Plaza Nueva a intercambiarlos? </string>
+    <string name="lblZona8_2_MercadoDeLaRivera">Mercado de la Ribera</string>
+    <string name="Zona8_2_PuenteeIglesiadeSanAntón">Puente e Iglesia de San Antón</string>
+    <string name="Zona8_2_IglesiaDeSanNicolas">Iglesia de San Nicolás</string>
+    <string name="Zona8_2_Marijaia">Marijaia</string>
+    <string name="Zona8_2_RiaDeBilbao">Ría de Bilbao</string>
+    <string name="Zona8_2_HuchaDeTxikitero">Hucha de Txikitero</string>
+    <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
+    <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
 
 </resources>
