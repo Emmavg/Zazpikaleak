@@ -89,6 +89,12 @@ public class Desarrollador extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Desarrollador.this, Zona4_2.class);
+                startActivity(i);
+            }
+        });
     }
 }

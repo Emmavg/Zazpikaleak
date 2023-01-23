@@ -73,6 +73,10 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtZona1_5_Explicacion">Para desvelar el lugar, haz click en la foto</string>
     <string name="txtBienHecho">¡Bien hecho!</string>
     <string name="title_activity_mapa">MapaActivity</string>
+    <string name="textoPregunta1">¿Donde está la hucha de los txikiteros?</string>
+    <string name="textoPregunta2">¿Quiene son los txikiteros y qué relación tienen con la hucha?</string>
+    <string name="textoPregunta3">¿Quien puede meter el dinero en la hucha?</string>
+    <string name="textoPregunta4">¿Que se hace con el dinero?</string>
 
 
     <!-- Strings Zona 4 -->

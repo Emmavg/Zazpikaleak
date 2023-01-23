@@ -31,6 +31,12 @@
         android:text="Rima"/>
 
     <Button
+        android:id="@+id/desarrollador_btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preguntas"/>
+
+    <Button
         android:id="@+id/desarrollador_btn5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
