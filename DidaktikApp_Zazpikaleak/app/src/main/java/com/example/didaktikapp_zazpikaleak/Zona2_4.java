@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,13 +19,13 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Zona2_4 extends AppCompatActivity {
+public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDialogoConfirmacionListener{
 
-    private MediaPlayer audio;
+    private MediaPlayer audio, audioDindong;
     private ImageView imgZona2_4_Foto1,imgZona2_4_Foto2;
     private Button btnZona2_4_Siguiente;
     private TextView txtZona2_4_Narrador_1, txtZona2_4_Narrador_2;
-    private Zona1_3_Dialogo dialogo;
+    private Zona2_5_Dialogo dialogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class Zona2_4 extends AppCompatActivity {
         setContentView(R.layout.activity_zona2_4);
         imgZona2_4_Foto1 = findViewById(R.id.imgZona2_4_Foto1);
         imgZona2_4_Foto2 = findViewById(R.id.imgZona2_4_Foto2);
-//        btnZona2_4_Siguiente = findViewById(R.id.zona2_4_btnSiguiente);
+        btnZona2_4_Siguiente = findViewById(R.id.zona2_4_btnSiguiente);
         txtZona2_4_Narrador_1 = findViewById(R.id.txtZona2_4_Narrador_1);
         txtZona2_4_Narrador_2 = findViewById(R.id.txtZona2_4_Narrador_2);
 
@@ -85,9 +86,31 @@ public class Zona2_4 extends AppCompatActivity {
             }
         });
 
+
+        btnZona2_4_Siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo = new Zona2_5_Dialogo();
+                dialogo.show(fragmentManager, "Informacion Parada");
+                audio.stop();
+
+                //Audio Dindong
+                audioDindong = MediaPlayer.create(Zona2_4.this, R.raw.audio_zona2_5_dindong);
+                audioDindong.start();
+
+            }
+        });
+
+
+
     }
 
-
+    @Override
+    public void onPossitiveButtonClick() {
+        Intent intent = new Intent(Zona2_4.this, MapaActivity.class);
+        startActivity(intent);
+    }
 
 
 

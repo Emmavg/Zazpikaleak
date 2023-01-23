@@ -1,8 +1,10 @@
 package com.example.didaktikapp_zazpikaleak;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,12 +19,13 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Zona3_1 extends AppCompatActivity {
+public class Zona3_1 extends AppCompatActivity implements Zona3_1_Dialogo.OnDialogoConfirmacionListener{
 
     private MediaPlayer audio;
     private ImageView imgZona3_1_Foto1,imgZona3_1_Foto2,imgZona3_1_Foto3,imgZona3_1_Foto4, imgZona3_1_Foto5;
     private Button btnZona3_1_Siguiente;
     private TextView txtZona3_1_Narrador_1, txtZona3_1_Narrador_2, txtZona3_1_Narrador_3;
+    private Zona3_1_Dialogo dialogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,9 +124,24 @@ public class Zona3_1 extends AppCompatActivity {
             }
         });
 
+        btnZona3_1_Siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo = new Zona3_1_Dialogo();
+                dialogo.show(fragmentManager, "Informacion Parada");
+                audio.stop();
+
+            }
+        });
+
     }
 
-
+    @Override
+    public void onPossitiveButtonClick() {
+        Intent intent = new Intent(Zona3_1.this, Zona3_2.class);
+        startActivity(intent);
+    }
 
 
 

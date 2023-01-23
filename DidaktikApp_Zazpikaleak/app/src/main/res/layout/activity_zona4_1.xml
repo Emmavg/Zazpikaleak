@@ -6,74 +6,100 @@
     android:layout_height="match_parent"
     android:background= "@color/fondo"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Zona4_1">
 
-    <Button
-        android:id="@+id/Zona4_1btnGrupos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+    <TextView
         android:layout_marginTop="40dp"
-        android:text="Hacer Grupos" />
-
-    <EditText
-        android:id="@+id/Zona4_1txtRima"
-        android:layout_width="match_parent"
-        android:layout_height="216dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="@drawable/zona3_2_bordes_edittext"
-        android:enabled="false"
-        android:hint="@string/escribe_tu_rima"
-        android:outlineSpotShadowColor="@color/black"
-        android:textColor="@color/black" />
-
-    <Button
-        android:id="@+id/Zona4_1btnComprobar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="Comprobar" />
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/nunitomedium"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/txtZona4_6_Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
 
-    <RelativeLayout
-        android:id="@+id/Zona4_1relativeDidon"
-        android:layout_width="wrap_content"
-        android:layout_height="177dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="5dp"
-        android:visibility="invisible">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Zona4_1btnGrupos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Hacer Grupos" />
+
+            <EditText
+                android:id="@+id/Zona4_1txtRima"
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/zona3_2_bordes_edittext"
+                android:enabled="false"
+                android:hint="@string/escribe_tu_rima"
+                android:outlineSpotShadowColor="@color/black"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Zona4_1btnComprobar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Comprobar" />
+
+            <RelativeLayout
+                android:id="@+id/Zona4_1relativeDidon"
+                android:layout_width="wrap_content"
+                android:layout_height="177dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible">
 
 
-        <TextView
-            android:id="@+id/Zona4_1txtDingdong"
-            android:layout_width="361dp"
-            android:layout_height="122dp"
-            android:layout_marginTop="56dp"
-            android:background="@drawable/bocadillo_cuadrado"
-            android:fontFamily="@font/nunitoregular"
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="50dp"
-            android:text="@string/que_rima_mas_original"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/Zona4_1txtDingdong"
+                    android:layout_width="361dp"
+                    android:layout_height="122dp"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/bocadillo_cuadrado"
+                    android:fontFamily="@font/nunitoregular"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="50dp"
+                    android:text="@string/que_rima_mas_original"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
 
-        <ImageView
-            android:id="@+id/Zona4_1img_Dingdong"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="right"
-            android:src="@drawable/dindonfunko" />
+                <ImageView
+                    android:id="@+id/Zona4_1img_Dingdong"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/dindonfunko" />
 
-    </RelativeLayout>
+            </RelativeLayout>
 
-    <Button
-        android:id="@+id/Zona4_1btnSiguiente"
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="-37dp"
-        android:text="Siguiente"
-        android:visibility="invisible" />
+            <Button
+                android:id="@+id/btnZona4_1_Siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/btnZona1_Siguiente"
+                android:visibility="invisible"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

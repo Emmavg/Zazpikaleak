@@ -7,17 +7,48 @@
     android:background="@color/fondo"
     android:orientation="vertical">
 
-    <View
-        android:id="@+id/layZona4_5_lienzo"
+    <TextView
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="579dp"></View>
-
-    <Button
-        android:id="@+id/btnZona4_5_Siguiente"
-        android:layout_width="263dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="100dp"
-        android:text="Siguiente"></Button>
+        android:background="@drawable/fondo"
+        android:fontFamily="@font/nunitomedium"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/txtZona4_6_Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/layZona4_5_lienzo"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="579dp">
+            </View>
+
+            <Button
+                android:id="@+id/btnZona4_5_Siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/btnZona1_Siguiente"
+                android:layout_gravity="end">
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

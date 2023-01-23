@@ -30,13 +30,13 @@ public class Zona4_1 extends AppCompatActivity {
         txtRima=findViewById(R.id.Zona4_1txtRima);
         btnGrupos=findViewById(R.id.Zona4_1btnGrupos);
         btnComprobar=findViewById(R.id.Zona4_1btnComprobar);
-        btnSiguiente=findViewById(R.id.Zona4_1btnSiguiente);
+        btnSiguiente=findViewById(R.id.btnZona4_1_Siguiente);
         relativeDidon1= findViewById(R.id.Zona4_1relativeDidon);
 
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
 
-        String[] arrAlumnos = {"Pepe", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Javi", "Pablo"};
+        String[] arrAlumnos = {"Ana", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Maite", "Pablo"};
         ArrayList<String> listaAlumnos = new ArrayList<>();
         for (String s : arrAlumnos) {
             listaAlumnos.add(s);

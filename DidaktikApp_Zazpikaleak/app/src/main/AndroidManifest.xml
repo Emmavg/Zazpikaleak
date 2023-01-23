@@ -17,6 +17,27 @@
         android:theme="@style/Theme.DidaktikApp_Zazpikaleak"
         tools:targetApi="31">
         <activity
+            android:name=".Zona3_2_Dialogo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Zona3_1_Dialogo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Zona2_5_Dialogo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Zona7_1"
             android:exported="false" />
         <activity
