@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -16,6 +17,7 @@ public class Zona2_1 extends AppCompatActivity {
     private Button zona2_1_btnCamara, zona2_1_btnSiguiente;
     private ImageView zona2_1_imgView;
     private RelativeLayout dindon;
+    private MediaPlayer audio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class Zona2_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 abrirCamara();
+
             }
         });
     }
@@ -57,6 +60,10 @@ public class Zona2_1 extends AppCompatActivity {
             Bitmap imgBitmap = (Bitmap) extras.get("data");
             zona2_1_imgView.setImageBitmap(imgBitmap);
             dindon.setVisibility(View.VISIBLE);
+
+            //Audio Dindong
+            audio = MediaPlayer.create(Zona2_1.this, R.raw.audio_zona2_2_dindong);
+            audio.start();
         }
     }
 

@@ -1,6 +1,7 @@
 package com.example.didaktikapp_zazpikaleak;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
@@ -23,6 +24,7 @@ public class Zona2_4 extends AppCompatActivity {
     private ImageView imgZona2_4_Foto1,imgZona2_4_Foto2;
     private Button btnZona2_4_Siguiente;
     private TextView txtZona2_4_Narrador_1, txtZona2_4_Narrador_2;
+    private Zona1_3_Dialogo dialogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +79,8 @@ public class Zona2_4 extends AppCompatActivity {
                 //Audio Narrador
                 audio = MediaPlayer.create(Zona2_4.this, R.raw.audio_zona2_4_parte2);
                 audio.start();
+
+
 
             }
         });

@@ -55,7 +55,7 @@
         android:text="Sopa de letras"/>
 
     <Button
-        android:id="@+id/desarrollador_btn8"
+        android:id="@+id/desarrollador_btn9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Unir con texto con imagenes" />

@@ -21,70 +21,81 @@
         android:textColor="@color/black"
         android:textSize="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/nunitoregular"
-        android:text="@string/txtZona1_5_Explicacion" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imgZona1_5_Foto"
-        android:layout_width="346dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:layout_height="179dp"
-        app:srcCompat="@drawable/zona1_5_fotoantigua" />
-
-    <TextView
-        android:id="@+id/txtZona1_5_Hint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="35dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/nunitoregular"
-        android:text="@string/txtZona1_5_Hint"
-        android:visibility="invisible"/>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="0dp">
-
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="56dp"
-            android:background="@drawable/bocadillo_cuadrado"
-            android:fontFamily="@font/nunitoregular"
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="50dp"
-            android:text="@string/txtZona1_5_DingDon"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="right"
-            android:src="@drawable/dindonfunko" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitoregular"
+                android:text="@string/txtZona1_5_Explicacion" />
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/imgZona1_5_Foto"
+                android:layout_width="346dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_height="179dp"
+                app:srcCompat="@drawable/zona1_5_fotoantigua" />
 
-    <Button
-        android:id="@+id/zona1_5_btnSiguiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:visibility="invisible"
-        android:layout_gravity="center"
-        android:text="@string/btnZona1_Siguiente">
-    </Button>
+            <TextView
+                android:id="@+id/txtZona1_5_Hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitoregular"
+                android:text="@string/txtZona1_5_Hint"
+                android:visibility="invisible"/>
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="0dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/bocadillo_cuadrado"
+                    android:fontFamily="@font/nunitoregular"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="50dp"
+                    android:text="@string/txtZona1_5_DingDon"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/dindonfunko" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/zona1_5_btnSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:text="@string/btnZona1_Siguiente">
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
