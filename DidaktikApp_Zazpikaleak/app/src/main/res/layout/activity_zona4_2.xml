@@ -96,11 +96,10 @@
         app:srcCompat="@drawable/zona4_2_foto" />
 
     <Button
-        android:id="@+id/zona7_3btn_Siguiente"
+        android:id="@+id/zona4_2btnSiguiente"
         android:layout_width="123dp"
         android:layout_height="56dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:enabled="false"
         android:text="Siguiente"></Button>
 </LinearLayout>
