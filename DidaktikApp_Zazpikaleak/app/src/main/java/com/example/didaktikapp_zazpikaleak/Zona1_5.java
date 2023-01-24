@@ -44,30 +44,37 @@ public class Zona1_5 extends AppCompatActivity {
         fotoAntigua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               pista.setVisibility(View.VISIBLE);
+                pista.setVisibility(View.VISIBLE);
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        btnSiguiente.setVisibility(View.VISIBLE);
+                    }
+                },1000);
             }
         });
-
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                btnSiguiente.setVisibility(View.VISIBLE);
-            }
-        },5000);
 
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Zona1_5.this, MapaActivity.class);
 
-                //Creas un objeto dao y marcas la actividad como hecha en la bbdd
+                // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
                 ProgresoDao pd = new ProgresoDao();
-                pd.actHecha(zazpidbh, "Actividad 1");
+                pd.actHecha(zazpidbh,"Actividad 11");
 
                 startActivity(intent);
+                finish();
             }
         });
 
+    }
 
+    //Parar el audio cuando se pulsa el boton back
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        audio.stop();
     }
 }

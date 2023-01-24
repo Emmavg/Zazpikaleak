@@ -64,25 +64,30 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
                 marker.showInfoWindow();//Visualizar info marcador
                 //marker.hideInfoWindow(); //Ocultar info marcador
                 mMap.getUiSettings();
+
                 if (marker.getTitle().equals(titulo)) {
                     if (marker.getTitle().equals("Mercado de la Ribera")) {
                         Intent intent = new Intent(MapaActivity.this, Zona1_1.class);
                         startActivity(intent);
+                        finish();
                     }
 
                     if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
                         Intent intent = new Intent(MapaActivity.this, Zona1_3.class);
                         startActivity(intent);
+                        finish();
                     }
 
                     if (marker.getTitle().equals("El Arenal")) {
                         Intent intent = new Intent(MapaActivity.this, Zona2_1.class);
                         startActivity(intent);
+                        finish();
                     }
 
                     if (marker.getTitle().equals("Ría de Bilbao")) {
                         Intent intent = new Intent(MapaActivity.this, Zona3_1.class);
                         startActivity(intent);
+                        finish();
                     }
 
 //                    if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
@@ -98,18 +103,34 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void insertarMarcador(){
 
-        // Consulta a la bbdd si está hecho o no para crearlo de un color o de otro
+        // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        ProgresoDao pd = new ProgresoDao();
 
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.25597973436736, -2.923720327217282))
-                .title("Mercado de la Ribera")
-        );
-        marker.setVisible(true);
+        // Consulta a la bbdd si está hecho o no para crearlo de un color o de otro
+        if  (pd.isHecha(zazpidbh,"Actividad 1")){
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.25597973436736, -2.923720327217282))
+                    .title("Mercado de la Ribera"));
+            marker.setVisible(true);
+        } else {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.25597973436736, -2.923720327217282))
+                    .title("Mercado de la Ribera"));
+            marker.setVisible(true);
+        }
+
 
         marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.255491548570184, -2.922557026304906))
-                .title("Iglesia y Puente de San Antón")
-        );
-        marker.setVisible(true);
+        if  (pd.isHecha(zazpidbh,"Actividad 11")){
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.255491548570184, -2.922557026304906))
+                    .title("Iglesia y Puente de San Antón")
+            );
+            marker.setVisible(true);
+        }else{
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.255491548570184, -2.922557026304906))
+                    .title("Iglesia y Puente de San Antón")
+            );
+            marker.setVisible(true);
+        }
 
         marker.showInfoWindow();
         marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.26019374692103, -2.922419205181956))

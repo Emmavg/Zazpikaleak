@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-public class Zona4_1DialogoGrupos extends DialogFragment {
+public class Zona4_1_DialogoGrupos extends DialogFragment {
     private final String[] alumn;
-    public Zona4_1DialogoGrupos(String[] alumnos) {
+    public Zona4_1_DialogoGrupos(String[] alumnos) {
         alumn=alumnos;
     }
     @NonNull

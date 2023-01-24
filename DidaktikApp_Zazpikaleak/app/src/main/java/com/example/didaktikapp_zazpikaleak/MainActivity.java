@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Generamos la conexion de la BBDD
 
-        //Abrimos la base de datos en modo de escritura solo lo haces la primera vez
+        //Abrimos la base de datos con nombre: ZazpikaleakDB en modo de escritura solo lo haces la primera vez
 //        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(this, "ZazpikaleakDB", null, 1);
 //        ProgresoDao pd = new ProgresoDao();
 //        pd.crearBBDD(zazpidbh);

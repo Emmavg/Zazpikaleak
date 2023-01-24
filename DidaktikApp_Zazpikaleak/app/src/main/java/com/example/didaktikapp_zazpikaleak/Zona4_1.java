@@ -8,11 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import com.example.didaktikapp_zazpikaleak.Zona4_1DialogoGrupos;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +16,7 @@ import java.util.HashMap;
 public class Zona4_1 extends AppCompatActivity {
     private Button btnGrupos,btnComprobar, btnSiguiente;
     private EditText txtRima;
-    private Zona4_1DialogoGrupos dialogoGrupos;
+    private Zona4_1_DialogoGrupos dialogoGrupos;
     private RelativeLayout relativeDidon1 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +114,7 @@ public class Zona4_1 extends AppCompatActivity {
     }
     private void abrirDialogo(String[] total) {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        dialogoGrupos = new Zona4_1DialogoGrupos(total);
+        dialogoGrupos = new Zona4_1_DialogoGrupos(total);
         dialogoGrupos.show(fragmentManager, "Hacer Grupos");
     };
 

@@ -39,6 +39,7 @@
                 android:fontFamily="@font/nunitoregular"
                 android:text="@string/txtZona1_5_Explicacion" />
 
+<<<<<<< Updated upstream
             <ImageView
                 android:id="@+id/imgZona1_5_Foto"
                 android:layout_width="346dp"
@@ -46,6 +47,13 @@
                 android:layout_gravity="center"
                 android:layout_height="179dp"
                 app:srcCompat="@drawable/zona1_5_fotoantigua" />
+=======
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp">
+>>>>>>> Stashed changes
 
             <TextView
                 android:id="@+id/txtZona1_5_Hint"
