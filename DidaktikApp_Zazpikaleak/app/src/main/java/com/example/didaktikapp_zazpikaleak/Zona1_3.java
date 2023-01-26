@@ -89,7 +89,11 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 dialogo = new Zona1_3_Dialogo();
                 dialogo.show(fragmentManager, "Informacion Juego");
+
+
+                rlayout.setVisibility(View.INVISIBLE);
                 botonSiguiente.setVisibility(View.INVISIBLE);
+                puntuacion();
             }
         });
 
@@ -206,5 +210,13 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
     @Override
     public void onPossitiveButtonClick() {
         init();
+    }
+
+    //Cuando se pulsa el boton back
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona1_3.this, MapaActivity.class);
+        startActivity(intent);
     }
 }

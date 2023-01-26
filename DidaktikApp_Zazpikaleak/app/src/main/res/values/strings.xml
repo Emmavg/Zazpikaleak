@@ -5,7 +5,7 @@
 
     <string name="btnMenuPrincipal">Empezar</string>
     <string name="txtBienvenidaApp_Dingdong">¡Hola, me llamo Din Don y voy a ser vuestro guía durante esta aventura!</string>
-    <string name="creditos">\@Creditos</string>
+    <string name="creditos">\@DinDon2023</string>
     <string name="creditosCJ">\tAiram Brito\n\tAlayn Marcos\n\tEmma Vélez\n\tMiguel Angel Fuente </string>
     <string name="creditosUPV">\tAmaia Quintanilla\n\tLeire Taboada\n\tOlatz Sagastizabal</string>
 
@@ -29,6 +29,11 @@
 
     <string name="btnZona1_Siguiente">Siguiente</string>
 
+    <string name="txtZona1_3Dingdong">En este juego deberás hacer de forma individual, parejas de las diferentes fotos de las paradas</string>
+
+    <string name="txtZona1_5_Explicacion">Para desvelar el lugar, haz click en la foto</string>
+
+
     <!-- Strings Zona 2 -->
 
     <string name="txtZona2_1_Titulo">El Arenal y la Iglesia de San Nicolás</string>
@@ -51,6 +56,9 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
     <string name="btnZona2_1_Camara">Sacar Foto</string>
 
 
+    <string name="txtZona2_5Dingdong">¿Estais listos y listas para ir a la siguiente parada? ¡Vámonos!</string>
+
+
     <!-- Strings Zona 3 -->
 
     <string name="txtZona3_1_Titulo">Ría de Bilbao</string>
@@ -69,14 +77,21 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="btnZona3_2_ORDEN">Orden</string>
     <string name="que_rima_mas_original">Que rima mas original</string>
     <string name="escribe_tu_rima">Escribe tu rima sobre la baldosa</string>
-    <string name="txtZona1_3Dingdong">En este juego deberás hacer de forma individual, parejas de las diferentes fotos de las paradas</string>
-    <string name="txtZona1_5_Explicacion">Para desvelar el lugar, haz click en la foto</string>
+
     <string name="txtBienHecho">¡Bien hecho!</string>
     <string name="title_activity_mapa">MapaActivity</string>
     <string name="textoPregunta1">¿Donde está la hucha de los txikiteros?</string>
     <string name="textoPregunta2">¿Quiene son los txikiteros y qué relación tienen con la hucha?</string>
     <string name="textoPregunta3">¿Quien puede meter el dinero en la hucha?</string>
     <string name="textoPregunta4">¿Que se hace con el dinero?</string>
+
+    <string name="txtZona3_1Dingdong">Ahora por grupos teneis que inventaros una leyenda de entre 30 a 40 palabras que y tienen que aparecer las palabras: <font color='#EE0000'>BARRO - PUENTE - PECES</font></string>
+
+    <string name="txtZona3_2Dingdong">¡Me ha encantado vuestra leyenda!</string>
+
+
+    <string name="txtZona3_2Dingdong_parte2">Como ya habéis leído todas vuestras leyendas, ¡podemos pasar a la siguiente parada!</string>
+
 
 
     <!-- Strings Zona 4 -->

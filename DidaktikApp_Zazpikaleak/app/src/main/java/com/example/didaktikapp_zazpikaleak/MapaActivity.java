@@ -64,30 +64,57 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
                 marker.showInfoWindow();//Visualizar info marcador
                 //marker.hideInfoWindow(); //Ocultar info marcador
                 mMap.getUiSettings();
+
                 if (marker.getTitle().equals(titulo)) {
                     if (marker.getTitle().equals("Mercado de la Ribera")) {
                         Intent intent = new Intent(MapaActivity.this, Zona1_1.class);
                         startActivity(intent);
+                        finish();
                     }
 
                     if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
                         Intent intent = new Intent(MapaActivity.this, Zona1_3.class);
                         startActivity(intent);
+                        finish();
                     }
 
                     if (marker.getTitle().equals("El Arenal")) {
                         Intent intent = new Intent(MapaActivity.this, Zona2_1.class);
                         startActivity(intent);
+                        finish();
+                    }
+
+                    if (marker.getTitle().equals("Iglesia de San Nicolás")) {
+                        Intent intent = new Intent(MapaActivity.this, Zona4_1.class);
+                        startActivity(intent);
+                        finish();
                     }
 
                     if (marker.getTitle().equals("Ría de Bilbao")) {
                         Intent intent = new Intent(MapaActivity.this, Zona3_1.class);
                         startActivity(intent);
+                        finish();
                     }
 
-//                    if (marker.getTitle().equals("Iglesia y Puente de San Antón")) {
-//                        Intent intent = new Intent(MapaActivity.this, Zona1_3.class);
-//                        startActivity(intent)
+                    if (marker.getTitle().equals("Teatro Arriaga")) {
+                        Intent intent = new Intent(MapaActivity.this, Zona5_2.class);
+                        startActivity(intent);
+                        finish();
+                    }
+
+                    if (marker.getTitle().equals("Calle Pelota")) {
+                        Intent intent = new Intent(MapaActivity.this, Zona6_4.class);
+                        startActivity(intent);
+                        finish();
+                    }
+
+                    if (marker.getTitle().equals("Plaza Nueva")) {
+                        Intent intent = new Intent(MapaActivity.this, Zona7_1.class);
+                        startActivity(intent);
+                        finish();
+                    }
+
+
                 }else{
                     titulo = marker.getTitle();
                 }
@@ -98,55 +125,112 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void insertarMarcador(){
 
+        // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        ProgresoDao pd = new ProgresoDao();
+
         // Consulta a la bbdd si está hecho o no para crearlo de un color o de otro
+        if (pd.isHecha(zazpidbh,"Actividad 1")){
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.25597973436736, -2.923720327217282))
+                    .title("Mercado de la Ribera"));
+            marker.setVisible(true);
+        } else {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.25597973436736, -2.923720327217282))
+                    .title("Mercado de la Ribera"));
+            marker.setVisible(true);
+        }
 
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.25597973436736, -2.923720327217282))
-                .title("Mercado de la Ribera")
-        );
-        marker.setVisible(true);
-
-        marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.255491548570184, -2.922557026304906))
-                .title("Iglesia y Puente de San Antón")
-        );
-        marker.setVisible(true);
-
-        marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.26019374692103, -2.922419205181956))
-                .title("Iglesia de San Nicolás")
-        );
-        marker.setVisible(true);
 
         marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.260974434681735, -2.9239248139077127))
-                .title("Ría de Bilbao")
-        );
-        marker.setVisible(true);
+        if (pd.isHecha(zazpidbh,"Actividad 11")){
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.255491548570184, -2.922557026304906))
+                    .title("Iglesia y Puente de San Antón")
+            );
+            marker.setVisible(true);
+        }else{
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.255491548570184, -2.922557026304906))
+                    .title("Iglesia y Puente de San Antón")
+            );
+            marker.setVisible(true);
+        }
 
         marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.260196631277886, -2.92369518968737))
-                .title("El Arenal")
-        );
-        marker.setVisible(true);
+        if (pd.isHecha(zazpidbh,"Actividad 4")) {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.26019374692103, -2.922419205181956))
+                    .title("Iglesia de San Nicolás")
+            );
+            marker.setVisible(true);
+        } else{
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.26019374692103, -2.922419205181956))
+                    .title("Iglesia de San Nicolás")
+            );
+            marker.setVisible(true);
+        }
 
         marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.25911003682046, -2.922602431313634))
-                .title("Plaza Nueva")
-        );
-        marker.setVisible(true);
+        if (pd.isHecha(zazpidbh,"Actividad 3")) {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.260974434681735, -2.9239248139077127))
+                    .title("Ría de Bilbao")
+            );
+            marker.setVisible(true);
+        } else{
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.260974434681735, -2.9239248139077127))
+                    .title("Ría de Bilbao")
+            );
+            marker.setVisible(true);
+        }
 
         marker.showInfoWindow();
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.25970944619022, -2.9246468490538122))
-                .title("Teatro Arriaga")
-        );
-        marker.setVisible(true);
+        if (pd.isHecha(zazpidbh,"Actividad 2")) {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.260196631277886, -2.92369518968737))
+                    .title("El Arenal")
+            );
+            marker.setVisible(true);
+        } else {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.260196631277886, -2.92369518968737))
+                    .title("El Arenal")
+            );
+            marker.setVisible(true);
+        }
 
         marker.showInfoWindow();
+        if (pd.isHecha(zazpidbh,"Actividad 7")) {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.25911003682046, -2.922602431313634))
+                    .title("Plaza Nueva")
+            );
+            marker.setVisible(true);
+        } else{
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.25911003682046, -2.922602431313634))
+                    .title("Plaza Nueva")
+            );
+            marker.setVisible(true);
+        }
 
-        marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.257733010151746, -2.9250813643974927))
-                .title("Calle Pelota")
-        );
-        marker.setVisible(true);
+        marker.showInfoWindow();
+        if (pd.isHecha(zazpidbh,"Actividad 5")) {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.25970944619022, -2.9246468490538122))
+                    .title("Teatro Arriaga")
+            );
+            marker.setVisible(true);
+        } else {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.25970944619022, -2.9246468490538122))
+                    .title("Teatro Arriaga")
+            );
+            marker.setVisible(true);
+        }
+
+        marker.showInfoWindow();
+        if (pd.isHecha(zazpidbh,"Actividad 6")) {
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_verde)).position(new LatLng(43.257733010151746, -2.9250813643974927))
+                    .title("Calle Pelota")
+            );
+            marker.setVisible(true);
+        }else{
+            marker = mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_rojo)).position(new LatLng(43.257733010151746, -2.9250813643974927))
+                    .title("Calle Pelota")
+            );
+            marker.setVisible(true);
+        }
 
         marker.showInfoWindow();
     }

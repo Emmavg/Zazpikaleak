@@ -1,28 +1,28 @@
 package com.example.didaktikapp_zazpikaleak;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
+public class Zona3_1_Dialogo extends DialogFragment {
 
-public class Zona1_3_Dialogo extends DialogFragment{
-
-    private OnDialogoConfirmacionListener listener;
+    private Zona3_1_Dialogo.OnDialogoConfirmacionListener listener;
 
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.activity_zona1_3_dialogo, null))
-                .setTitle("* Juego de memoria *")
+        builder.setView(inflater.inflate(R.layout.activity_zona3_1_dialogo, null))
+                .setTitle("Informacion Del Juego")
                 .setPositiveButton("Aceptar",
                         new DialogInterface.OnClickListener() {
                             @Override
@@ -42,11 +42,10 @@ public class Zona1_3_Dialogo extends DialogFragment{
     public void onAttach(Context context) {
         super.onAttach(context);
         try{
-            listener = (OnDialogoConfirmacionListener) context;
+            listener = (Zona3_1_Dialogo.OnDialogoConfirmacionListener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString() +
                     " no Implemento OnDialogoConfirmacionListener");
         }
     }
 }
-

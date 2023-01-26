@@ -2,9 +2,13 @@ package com.example.didaktikapp_zazpikaleak;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,10 +17,16 @@ import java.util.HashMap;
 
 
 
-public class Zona3_2 extends AppCompatActivity {
-    private Button btnGrupos, btnOrden, btnComprobar;
+public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDialogoConfirmacionListener{
+
+    private Button btnGrupos, btnOrden, btnComprobar, btnZona3_2_Siguiente;
     private TextView txtleyenda;
     private Zona3_2_DialogoGrupos dialogoGrupos;
+
+    private RelativeLayout rlayout;
+    private MediaPlayer audio;
+    private MediaPlayer audio1;
+    private Zona3_2_Dialogo dialogo;
 
     private String[] palabras = {"barro", "puente", "peces"};
 
@@ -28,12 +38,14 @@ public class Zona3_2 extends AppCompatActivity {
         btnGrupos = findViewById(R.id.zona3_2_btnGrupos);
         btnOrden = findViewById(R.id.zona3_2_btnOrden);
         btnComprobar = findViewById(R.id.zona3_2_btnComprobar);
+        btnZona3_2_Siguiente = findViewById(R.id.btnZona3_2_Siguiente);
         txtleyenda = findViewById(R.id.zona3_2_txtLeyenda);
+        rlayout = findViewById(R.id.zona3_2_dindon);
 
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
 
-        String[] arrAlumnos = {"Pepe", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Javi", "Pablo"};
+        String[] arrAlumnos = {"Carmen", "Juan", "Iker", "Emma", "Miguel", "Airam", "Irune", "Xavi", "Xabi", "Javi", "Pablo"};
         ArrayList<String> listaAlumnos = new ArrayList<>();
         for (String s : arrAlumnos) {
             listaAlumnos.add(s);
@@ -121,6 +133,15 @@ public class Zona3_2 extends AppCompatActivity {
                 } else {
                     txtleyenda.setBackgroundResource(R.drawable.zona3_2_bordes_edittext_bien);
                     btnOrden.setEnabled(true);
+
+//                  Hacemos visible el Relative Layout y el boton siguiente
+                    rlayout.setVisibility(View.VISIBLE);
+                    btnZona3_2_Siguiente.setVisibility(View.VISIBLE);
+
+                    //Audio dindong
+                    audio = MediaPlayer.create(Zona3_2.this, R.raw.audio_zona3_2_dindong);
+                    audio.start();
+
                 }
 
             }
@@ -171,6 +192,27 @@ public class Zona3_2 extends AppCompatActivity {
 
         });
 
+        btnZona3_2_Siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo = new Zona3_2_Dialogo();
+                dialogo.show(fragmentManager, "Informacion Parada");
+                audio.stop();
+
+                //Audio dindong
+                audio1 = MediaPlayer.create(Zona3_2.this, R.raw.audio_zona3_2_dindong_parte2);
+                audio1.start();
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onPossitiveButtonClick() {
+        Intent intent = new Intent(Zona3_2.this, MapaActivity.class);
+        startActivity(intent);
     }
 
     private void abrirDialogo(String[] total) {

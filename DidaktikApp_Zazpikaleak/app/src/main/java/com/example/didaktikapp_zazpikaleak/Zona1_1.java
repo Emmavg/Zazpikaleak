@@ -126,14 +126,23 @@ public class Zona1_1 extends AppCompatActivity implements Zona1_2_Dialogo.OnDial
 
     @Override
     public void onPossitiveButtonClick() {
+        // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        ProgresoDao pd = new ProgresoDao();
+        pd.actHecha(zazpidbh,"Actividad 1");
+
         Intent intent = new Intent(Zona1_1.this, MapaActivity.class);
         startActivity(intent);
+        finish();
     }
 
     //Parar el audio cuando se pulsa el boton back
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(Zona1_1.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
         audio.stop();
     }
 

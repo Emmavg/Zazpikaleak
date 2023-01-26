@@ -8,11 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import com.example.didaktikapp_zazpikaleak.Zona4_1DialogoGrupos;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +16,7 @@ import java.util.HashMap;
 public class Zona4_1 extends AppCompatActivity {
     private Button btnGrupos,btnComprobar, btnSiguiente;
     private EditText txtRima;
-    private Zona4_1DialogoGrupos dialogoGrupos;
+    private Zona4_1_DialogoGrupos dialogoGrupos;
     private RelativeLayout relativeDidon1 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +26,13 @@ public class Zona4_1 extends AppCompatActivity {
         txtRima=findViewById(R.id.Zona4_1txtRima);
         btnGrupos=findViewById(R.id.Zona4_1btnGrupos);
         btnComprobar=findViewById(R.id.Zona4_1btnComprobar);
-        btnSiguiente=findViewById(R.id.Zona4_1btnSiguiente);
+        btnSiguiente=findViewById(R.id.btnZona4_1_Siguiente);
         relativeDidon1= findViewById(R.id.Zona4_1relativeDidon);
 
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
 
-        String[] arrAlumnos = {"Pepe", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Javi", "Pablo"};
+        String[] arrAlumnos = {"Ana", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Maite", "Pablo"};
         ArrayList<String> listaAlumnos = new ArrayList<>();
         for (String s : arrAlumnos) {
             listaAlumnos.add(s);
@@ -118,7 +114,7 @@ public class Zona4_1 extends AppCompatActivity {
     }
     private void abrirDialogo(String[] total) {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        dialogoGrupos = new Zona4_1DialogoGrupos(total);
+        dialogoGrupos = new Zona4_1_DialogoGrupos(total);
         dialogoGrupos.show(fragmentManager, "Hacer Grupos");
     };
 

@@ -14,6 +14,10 @@ public class ProgresoDao {
                 String nombre ="Actividad "+i;
                 db.execSQL("INSERT INTO Progreso (actividad, hecho)" +
                         " VALUES ('"+nombre+"',False) ");
+                if (i==1){
+                    nombre ="Actividad 11";
+                    db.execSQL("INSERT INTO Progreso (actividad, hecho) VALUES ('"+nombre+"',False) ");
+                }
             }
         }
         db.close();
@@ -24,9 +28,25 @@ public class ProgresoDao {
     public void actHecha(ZazpiKaleakSQLiteHelper zazpidbh, String nombre){
         SQLiteDatabase db = zazpidbh.getWritableDatabase();
         if (db != null) {
-            db.execSQL("UPDATE Progreso SET hecho=True WHERE actividad='" + nombre+"'");
+            db.execSQL("UPDATE Progreso SET hecho=True WHERE actividad='"+nombre+"'");
+            Cursor c = db.rawQuery("SELECT * FROM Progreso WHERE hecho = False", null);
+            System.out.println("*****************************************************"+ c.getCount());
+            c.close();
         }
         db.close();
+    }
+
+    public boolean isHecha(ZazpiKaleakSQLiteHelper zazpidbh, String nombre){
+        SQLiteDatabase db = zazpidbh.getWritableDatabase();
+        if (db != null) {
+            Cursor c = db.rawQuery("SELECT * FROM Progreso WHERE actividad = '"+nombre+"' AND hecho = True", null);
+            if(c.getCount()==1){
+                return true;
+            }
+            c.close();
+        }
+        db.close();
+        return false;
     }
 
     // En caso de resetear la partida
