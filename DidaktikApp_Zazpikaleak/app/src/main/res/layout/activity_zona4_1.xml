@@ -56,6 +56,19 @@
                 android:layout_marginHorizontal="20dp"
                 android:text="Comprobar" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnDuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="#5020C2"
+                android:layout_marginHorizontal="20dp"
+                android:outlineSpotShadowColor="@color/white"
+                android:src="@drawable/ic_action_name"
+                app:fabSize="normal"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true"/>
+
             <RelativeLayout
                 android:id="@+id/Zona4_1relativeDidon"
                 android:layout_width="wrap_content"

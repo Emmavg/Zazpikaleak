@@ -12,6 +12,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -22,10 +24,11 @@ public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDial
     private Button btnGrupos, btnOrden, btnComprobar, btnZona3_2_Siguiente;
     private TextView txtleyenda;
     private Zona3_2_DialogoGrupos dialogoGrupos;
-
+    private FloatingActionButton duda;
     private RelativeLayout rlayout;
     private MediaPlayer audio;
     private MediaPlayer audio1;
+    private Zona3_1_DialogoDuda dialogo2;
     private Zona3_2_Dialogo dialogo;
 
     private String[] palabras = {"barro", "puente", "peces"};
@@ -41,7 +44,7 @@ public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDial
         btnZona3_2_Siguiente = findViewById(R.id.btnZona3_2_Siguiente);
         txtleyenda = findViewById(R.id.zona3_2_txtLeyenda);
         rlayout = findViewById(R.id.zona3_2_dindon);
-
+        duda=findViewById(R.id.btnDuda);
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
 
@@ -89,7 +92,16 @@ public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDial
                 pos += 1;
             }
         }
+//********************************* Boton Dudas ***************************
+        duda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo2 = new Zona3_1_DialogoDuda();
+                dialogo2.show(fragmentManager, "Pasos Parada");
 
+            }
+        });
 //********************************* Mostrar Grupos ***************************
 
         btnGrupos.setOnClickListener(new View.OnClickListener() {
