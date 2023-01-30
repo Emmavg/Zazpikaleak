@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -18,6 +20,8 @@ public class Zona4_1 extends AppCompatActivity {
     private EditText txtRima;
     private Zona4_1_DialogoGrupos dialogoGrupos;
     private RelativeLayout relativeDidon1 ;
+    private FloatingActionButton duda;
+    private
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +32,7 @@ public class Zona4_1 extends AppCompatActivity {
         btnComprobar=findViewById(R.id.Zona4_1btnComprobar);
         btnSiguiente=findViewById(R.id.btnZona4_1_Siguiente);
         relativeDidon1= findViewById(R.id.Zona4_1relativeDidon);
+        duda=findViewById()
 
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
