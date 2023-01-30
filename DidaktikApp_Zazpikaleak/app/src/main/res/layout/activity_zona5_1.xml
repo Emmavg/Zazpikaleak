@@ -15,7 +15,7 @@
         android:fontFamily="@font/nunitomedium"
         android:paddingHorizontal="40dp"
         android:paddingTop="30dp"
-        android:text="@string/txtZona5_2_Titulo"
+        android:text="@string/zona5_1puzzle_de_marijaia"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30dp" />

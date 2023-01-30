@@ -5,6 +5,8 @@
 
     <string name="btnMenuPrincipal">Empezar</string>
     <string name="txtBienvenidaApp_Dingdong">¡Hola, me llamo Din Don y voy a ser vuestro guía durante esta aventura!</string>
+    <string name="txtBienvenidaContinuacionApp_Dingdong">¡Bienvenid@ de nuevo, continuemos con nuestra aventura!</string>
+    <string name="txtReseteoBase">Con esta acción perderás todas las paradas que has realizado.\n\n¿Estás seguro de querer empezar de nuevo?</string>
     <string name="creditos">\@DinDon2023</string>
     <string name="creditosCJ">\tAiram Brito\n\tAlayn Marcos\n\tEmma Vélez\n\tMiguel Angel Fuente </string>
     <string name="creditosUPV">\tAmaia Quintanilla\n\tLeire Taboada\n\tOlatz Sagastizabal</string>
@@ -134,5 +136,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="Zona8_2_HuchaDeTxikitero">Hucha de Txikitero</string>
     <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
     <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
+    <string name="zona5_1puzzle_de_marijaia">Puzzle de Marijaia</string>
+
 
 </resources>

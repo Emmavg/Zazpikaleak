@@ -20,6 +20,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
     private ImageView imgPieza1,imgPieza2,imgPieza3,imgPieza4,imgPieza5,imgPieza6;
     private View vaux,pieza1,pieza2,pieza3,pieza4,pieza5,pieza6;
     private Button btnSiguiente;
+    private boolean bienPieza1,bienPieza2,bienPieza3,bienPieza4,bienPieza5,bienPieza6;
 
 
     @Override
@@ -28,6 +29,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
         setContentView(R.layout.activity_zona5_1);
         findViews();
         implementEvents();
+        btnSiguiente.setEnabled(false);
     }
     public void Siguiente(View v){
         Intent i = new Intent(Zona5_1.this, Zona5_2.class);
@@ -178,52 +180,60 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 System.out.println(dragData+"--------------------"+container.getTag());
                 if(dragData.equals("Pieza1")){
                     if(container.getTag().toString().equals(dragData)){
-                        System.out.println("**********************************///////****************************************");
                         pieza1.setBackground(getDrawable(R.drawable.zona5_1_pieza1));
                         imgPieza1.setVisibility(View.INVISIBLE);
+                        bienPieza1=true;
                     }else{
-
+                        bienPieza1=false;
                     }
                 }
                 if(dragData.equals("Pieza2")){
                     if(container.getTag().toString().equals(dragData)) {
                         pieza2.setBackground(getDrawable(R.drawable.zona5_1_pieza2));
                         imgPieza2.setVisibility(View.INVISIBLE);
+                        bienPieza2=true;
                     }else{
-
+                        bienPieza2=false;
                     }
                 }
                 if(dragData.equals("Pieza3")){
                     if(container.getTag().toString().equals(dragData)) {
                         pieza3.setBackground(getDrawable(R.drawable.zona5_1_pieza3));
                         imgPieza3.setVisibility(View.INVISIBLE);
+                        bienPieza3=true;
                     }else{
-
+                        bienPieza3=false;
                     }
                 }
                 if(dragData.equals("Pieza4")){
                     if(container.getTag().toString().equals(dragData)){
                         pieza4.setBackground(getDrawable(R.drawable.zona5_1_pieza4));
                         imgPieza4.setVisibility(View.INVISIBLE);
+                        bienPieza4=true;
                     }else{
-
+                        bienPieza4=false;
                     }
                 }
                 if(dragData.equals("Pieza5")){
                     if(container.getTag().toString().equals(dragData)) {
                         pieza5.setBackground(getDrawable(R.drawable.zona5_1_pieza5));
                         imgPieza5.setVisibility(View.INVISIBLE);
+                        bienPieza5=true;
                     }else{
-
+                        bienPieza5=false;
                     }
                 }
                 if(dragData.equals("Pieza6")){
                     if(container.getTag().toString().equals(dragData)) {
                         pieza6.setBackground(getDrawable(R.drawable.zona5_1_pieza6));
                         imgPieza6.setVisibility(View.INVISIBLE);
+                        bienPieza6=true;
                     }else{
-
+                        bienPieza6=false;
                     }
+                }
+                if(bienPieza1 && bienPieza2 && bienPieza3 && bienPieza4 && bienPieza5 && bienPieza6 ){
+                    btnSiguiente.setEnabled(true);
                 }
 
 
