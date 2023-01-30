@@ -186,40 +186,6 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/zona8_2_ria_de_bilbao" />
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/Lmarijaia"
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:tag="marijaia">
-
-            <ImageView
-                android:id="@+id/marijaia"
-                android:layout_width="110dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/zona8_2_marijaia" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/Lhucha"
-            android:layout_width="110dp"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:tag="hucha">
-
-            <ImageView
-                android:id="@+id/hucha"
-                android:layout_width="110dp"
-                android:layout_height="118dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/zona8_2_hucha_de_txikitero" />
-        </LinearLayout>
-
         <LinearLayout
             android:id="@+id/Lteatro"
             android:layout_width="110dp"
@@ -237,6 +203,21 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/Lmarijaia"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="marijaia">
+
+            <ImageView
+                android:id="@+id/marijaia"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_marijaia" />
+        </LinearLayout>
+        <LinearLayout
             android:id="@+id/Lplaza"
             android:layout_width="110dp"
             android:layout_height="30dp"
@@ -250,7 +231,28 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/zona8_2_plaza_nueva" />
+
+
+
+
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Lhucha"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="hucha">
+
+            <ImageView
+                android:id="@+id/hucha"
+                android:layout_width="110dp"
+                android:layout_height="118dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zona8_2_hucha_de_txikitero" />
+        </LinearLayout>
+
 
     </LinearLayout>
 </LinearLayout>

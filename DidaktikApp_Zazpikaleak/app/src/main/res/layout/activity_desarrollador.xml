@@ -41,12 +41,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Dibujar baldosa"/>
+    <Button
+        android:id="@+id/desarrollador_btn5_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puzle"/>
 
     <Button
         android:id="@+id/desarrollador_btn6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Parada6"/>
+
 
     <Button
         android:id="@+id/desarrollador_btn7"
