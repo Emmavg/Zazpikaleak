@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="107dp"
-        android:layout_height="150dp"
+        android:layout_height="270dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/dindonfunko" />
@@ -20,13 +20,16 @@
         android:padding="3dp">
 
         <TextView
-            android:id="@+id/txtDialogo"
+            android:id="@+id/txtdialogo"
             android:layout_width="wrap_content"
-            android:layout_height="116dp"
+            android:layout_height="250dp"
             android:layout_marginTop="35dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/nunito"
-            android:text="@string/txtZona3_2Dingdong_parte2"
+            android:text="Pasos:
+                            \n1.- Darle al boton para hacer los grupos
+                            \n2.-Escribir una rima que contega la palabra baldosa
+                            \n3.-Pulsar el boton comprobar"
             android:textColor="@color/black"
             android:textSize="15dp" />
     </LinearLayout>
