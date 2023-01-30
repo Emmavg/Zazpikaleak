@@ -2,14 +2,15 @@ package com.example.didaktikapp_zazpikaleak;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,8 +18,8 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
 
     private static final String TAG = Zona5_1.class.getSimpleName();
     private ImageView imgPieza1,imgPieza2,imgPieza3,imgPieza4,imgPieza5,imgPieza6;
-    private View vaux,pieza1,pieza2,pieza3,pieza4,pieza5,pieza6
-            ;
+    private View vaux,pieza1,pieza2,pieza3,pieza4,pieza5,pieza6;
+    private Button btnSiguiente;
 
 
     @Override
@@ -28,7 +29,10 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
         findViews();
         implementEvents();
     }
-
+    public void Siguiente(View v){
+        Intent i = new Intent(Zona5_1.this, Zona5_2.class);
+        startActivity(i);
+    }
     //Find all views and set Tag to all draggable views
     private void findViews() {
         imgPieza1 = (ImageView) findViewById(R.id.imgpieza1);
@@ -50,6 +54,8 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
         pieza4 = findViewById(R.id.pieza4);
         pieza5 = findViewById(R.id.pieza5);
         pieza6 = findViewById(R.id.pieza6);
+
+        btnSiguiente=findViewById(R.id.btnZona5_1_Siguiente);
 
     }
 
@@ -140,7 +146,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 // Applies a YELLOW or any color tint to the View, when the dragged view entered into drag acceptable view
                 // Return true; the return value is ignored.
 
-                view.getBackground().setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_IN);
+              //  view.getBackground().setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_IN);
 
                 // Invalidate the view to force a redraw in the new tint
                 view.invalidate();
@@ -150,13 +156,8 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 // Ignore the event
                 return true;
             case DragEvent.ACTION_DRAG_EXITED:
-                // Re-sets the color tint to blue, if you had set the BLUE color or any color in ACTION_DRAG_STARTED. Returns true; the return value is ignored.
 
-                //  view.getBackground().setColorFilter(Color.BLUE, PorterDuff.Mode.SRC_IN);
-
-                //If u had not provided any color in ACTION_DRAG_STARTED then clear color filter.
                 view.getBackground().clearColorFilter();
-                // Invalidate the view to force a redraw in the new tint
                 view.invalidate();
 
                 return true;
@@ -167,8 +168,6 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 // Gets the text data from the item.
                 String dragData = item.getText().toString();
 
-                // Displays a message containing the dragged data.
-                Toast.makeText(this, "Dragged data is " + dragData, Toast.LENGTH_SHORT).show();
 
                 // Turns off any color tints
                 view.getBackground().clearColorFilter();
@@ -247,12 +246,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 view.invalidate();
 
                 // Does a getResult(), and displays what happened.
-                if (event.getResult()) {
-               //     System.out.println(event + "*********************************************************************************************************************************************");
-                    Toast.makeText(this, "The drop was handled.", Toast.LENGTH_SHORT).show();
-                }
-                else
-                    Toast.makeText(this, "The drop didn't work.", Toast.LENGTH_SHORT).show();
+
 
 
 
