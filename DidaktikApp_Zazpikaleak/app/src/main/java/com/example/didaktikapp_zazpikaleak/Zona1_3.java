@@ -102,6 +102,7 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
             public void onClick(View v) {
                 Intent intent = new Intent(Zona1_3.this, Zona1_5.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

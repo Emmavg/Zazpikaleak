@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MapaActivity" />
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <!-- Mapa -->
+
+    <<fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapaActivity" />
+      
+
+
+    <!-- Contador -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:paddingRight="40dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/fondo"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/dindonfunko" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/contadorActividades"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/nunitoregular"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingRight="5dp"
+                android:fontFamily="@font/nunitoregular"
+                android:text=" / 8"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="bottom">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ayudaMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#5020C2"
+            android:src="@drawable/ic_restart"
+            app:fabSize="normal"
+            app:showMotionSpec="@android:anim/fade_in"
+            app:useCompatPadding="true" />
+    </LinearLayout>
+
+</RelativeLayout>
+
