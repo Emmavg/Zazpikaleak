@@ -138,15 +138,11 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
     <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
     <string name="zona5_1puzzle_de_marijaia">Puzzle de Marijaia</string>
-<<<<<<< Updated upstream
     <string name="en_la_calle_pelota">En la calle pelota</string>
     <string name="el_dinero_se_dona">El dinero se dona</string>
     <string name="cualquiera_puede">Cualquiera puede</string>
     <string name="d_cada_de_los_90">Década de los 90</string>
     <string name="pregunta_sin_miedo">PREGUNTA SIN MIEDO</string>
-=======
     <string name="txtMapa_Introduccion">Bienvenidos al casco viejo de Bilbao. Una vez aquí, debereis pasar por cada una de las paradas y completar las diversas actividades para desbloquear una actividad final. \n\nArriba a la derecha encontraremos un contador que nos va indiciando cuántas paradas hemos completado. \n\nComenzaremos por el Mercado de la Ribera, en el manual de usuario podrás encontar el orden recomendado de las paradas,</string>
->>>>>>> Stashed changes
-
 
 </resources>

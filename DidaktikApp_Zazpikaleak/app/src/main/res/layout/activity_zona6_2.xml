@@ -250,7 +250,7 @@
             android:backgroundTint="#5020C2"
             android:onClick="ayuda"
             android:outlineSpotShadowColor="@color/white"
-            android:src="@drawable/ic_action_name"
+            android:src="@drawable/ic_ayuda"
             app:fabSize="normal"
             app:showMotionSpec="@android:anim/fade_in"
             app:useCompatPadding="true" />
