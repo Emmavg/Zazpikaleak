@@ -21,7 +21,7 @@ public class Zona4_1 extends AppCompatActivity {
     private Zona4_1_DialogoGrupos dialogoGrupos;
     private RelativeLayout relativeDidon1 ;
     private FloatingActionButton duda;
-    private
+    private Zona4_1_DialogoDuda dialogoDuda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class Zona4_1 extends AppCompatActivity {
         btnComprobar=findViewById(R.id.Zona4_1btnComprobar);
         btnSiguiente=findViewById(R.id.btnZona4_1_Siguiente);
         relativeDidon1= findViewById(R.id.Zona4_1relativeDidon);
-        duda=findViewById()
+        duda=findViewById(R.id.btnDuda);
 
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
@@ -90,6 +90,16 @@ public class Zona4_1 extends AppCompatActivity {
                 txtRima.setEnabled(true);
             }
 
+        });
+//********************************* Boton Dudas ***************************
+        duda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogoDuda = new Zona4_1_DialogoDuda();
+                dialogoDuda.show(fragmentManager, "Pasos Parada");
+
+            }
         });
 //********************************* Comprobar que la rima contenga la palabra baldosa ***************************
         btnComprobar.setOnClickListener(new View.OnClickListener() {

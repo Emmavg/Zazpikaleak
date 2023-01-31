@@ -26,10 +26,7 @@
             android:layout_marginTop="35dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/nunito"
-            android:text="Pasos:
-                            \n1.- Darle al boton para hacer los grupos
-                            \n2.-Escribir una rima que contega la palabra baldosa
-                            \n3.-Pulsar el boton comprobar"
+            android:text="@string/zonas4_1_pasos"
             android:textColor="@color/black"
             android:textSize="15dp" />
     </LinearLayout>
