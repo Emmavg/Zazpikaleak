@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 
 public class Desarrollador extends AppCompatActivity {
@@ -100,7 +99,7 @@ public class Desarrollador extends AppCompatActivity {
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Desarrollador.this, Zona4_2.class);
+                Intent i = new Intent(Desarrollador.this, Zona6_2.class);
                 startActivity(i);
             }
         });

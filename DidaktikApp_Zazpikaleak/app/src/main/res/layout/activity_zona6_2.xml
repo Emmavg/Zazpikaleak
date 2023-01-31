@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:onClick="pulsarAciertoFallo"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/zona4_2_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/pregunta_sin_miedo"
+        android:textColor="@color/black"
+        android:textSize="25sp"></TextView>
+    <TextView
+        android:id="@+id/zona4_2_Pregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textoPregunta1"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Zona4_2txtPregunta1"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/zona3_2_bordes_edittext"
+            android:enabled="false"
+            android:text="@string/en_la_calle_pelota"
+            android:outlineSpotShadowColor="@color/black"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/zona4_2_btnacierto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#08A00E"
+            android:onClick="pulsarAcierto"
+            android:src="@drawable/ic_action_check"
+            android:textSize="20sp"></ImageButton>
+
+        <Button
+            android:id="@+id/zona4_2_btnfallo1"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:onClick="pulsarFallo"
+            android:text="x"
+            android:textSize="20sp">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zona4_2_Pregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/textoPregunta2"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Zona4_2txtPregunta2"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/zona3_2_bordes_edittext"
+            android:enabled="false"
+            android:outlineSpotShadowColor="@color/black"
+            android:text="@string/d_cada_de_los_90"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/zona4_2_btnacierto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#08A00E"
+            android:onClick="pulsarAcierto"
+            android:src="@drawable/ic_action_check"
+            android:textSize="20sp"
+            android:visibility="invisible"></ImageButton>
+
+        <Button
+            android:id="@+id/zona4_2_btnfallo2"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:onClick="pulsarFallo"
+            android:text="x"
+            android:textSize="20sp"
+            android:visibility="invisible"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zona4_2_Pregunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/textoPregunta3"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Zona4_2txtPregunta3"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/zona3_2_bordes_edittext"
+            android:enabled="false"
+            android:outlineSpotShadowColor="@color/black"
+            android:text="@string/cualquiera_puede"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/zona4_2_btnacierto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#08A00E"
+            android:onClick="pulsarAcierto"
+            android:src="@drawable/ic_action_check"
+            android:textSize="20sp"
+            android:visibility="invisible"></ImageButton>
+
+        <Button
+            android:id="@+id/zona4_2_btnfallo3"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:onClick="pulsarFallo"
+            android:text="x"
+            android:visibility="invisible"
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zona4_2_Pregunta4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/textoPregunta4"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Zona4_2txtPregunta4"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/zona3_2_bordes_edittext"
+            android:enabled="false"
+            android:outlineSpotShadowColor="@color/black"
+            android:text="@string/el_dinero_se_dona"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/zona4_2_btnacierto4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#08A00E"
+            android:onClick="pulsarAcierto"
+            android:src="@drawable/ic_action_check"
+            android:textSize="20sp"
+            android:visibility="invisible"></ImageButton>
+
+        <Button
+            android:id="@+id/zona4_2_btnfallo4"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:onClick="pulsarFallo"
+            android:text="x"
+            android:visibility="invisible"
+            android:textSize="20sp"></Button>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Zona4_2_imgFoto1"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/zona4_2_foto" />
+
+    <LinearLayout
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zona4_2btnSiguiente"
+            android:layout_width="123dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:text="Siguiente"></Button>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/zona6_2_btnDuda"
+            android:layout_width="57dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="#5020C2"
+            android:onClick="ayuda"
+            android:outlineSpotShadowColor="@color/white"
+            android:src="@drawable/ic_action_name"
+            app:fabSize="normal"
+            app:showMotionSpec="@android:anim/fade_in"
+            app:useCompatPadding="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
