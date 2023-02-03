@@ -20,7 +20,7 @@ public class MapaActivity_Dialogo extends DialogFragment{
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.activity_main_dialogo, null))
+        builder.setView(inflater.inflate(R.layout.activity_mapa_dialogo, null))
                 .setTitle("Atención!!!")
                 .setPositiveButton("Aceptar",
                         new DialogInterface.OnClickListener() {

@@ -80,6 +80,14 @@ public class MainActivity extends AppCompatActivity implements MainActivity_Dial
             }
         });
 
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, MainAlumnos.class);
+                startActivity(i);
+            }
+        });
+
         titulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
