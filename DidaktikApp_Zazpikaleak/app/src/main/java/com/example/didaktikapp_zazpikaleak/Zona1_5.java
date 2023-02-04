@@ -74,7 +74,9 @@ public class Zona1_5 extends AppCompatActivity {
     //Parar el audio cuando se pulsa el boton back
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        Intent intent = new Intent(Zona1_5.this, Zona1_3.class);
+        startActivity(intent);
+        finish();
         audio.stop();
     }
 }

@@ -19,7 +19,7 @@
         Dentro hay más de 50 puestos de comida. Además, a veces se hacen conciertos. ¿Habéis estado alguna vez? ¿Qué comprasteis?\n\n
 
         Un poco más arriba del mercado está la iglesia de San Antón. No es la más antigua de Bilbao, pero sí una de las más importantes.
-        ¿Sabéis por qué? Esta iglesia y el puente de San Antón aparecen en el escudo de la ciudad y en el escudo del Athletic Club.
+        ¿Sabéis por qué? Esta Iglesia y el puente de San Antón aparecen en el escudo de la ciudad y en el escudo del Athletic Club.
 
     </string>
 
@@ -73,7 +73,7 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
 
     <string name="txtZona3_1_Narrador_3">Este chico se ahogó en las inundaciones que hubo en el siglo XVII, pero ¿sabéis que hubo nuevas inundaciones más recientemente? Durante la tarde y noche del 26 de Agosto de 1983 y celebrándose la Aste Nagusia de Bilbao, llovió mucho y la ría se desbordó.
 Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de barro y hubo gente que murió o acabó con heridas graves. Aunque hubo mucha gente que ayudó, tardaron muchos días en limpiarlo todo.</string>
-
+    <string name="zona3_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una leyenda que contega las palabras barro, peces y puente \n3.-Pulsar el boton orden para saber el orden que teneis que leer \n4.- leer la leyenda</string>
     <string name="btnZona3_2_HACER_LOS_GRUPOS">Hacer los grupos</string>
     <string name="btnZona3_2_Escribe_leyenda">Escribe la leyenda</string>
     <string name="btnZona3_2_ORDEN">Orden</string>
@@ -83,7 +83,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtBienHecho">¡Bien hecho!</string>
     <string name="title_activity_mapa">MapaActivity</string>
     <string name="textoPregunta1">¿Donde está la hucha de los txikiteros?</string>
-    <string name="textoPregunta2">¿Quiene son los txikiteros y qué relación tienen con la hucha?</string>
+    <string name="textoPregunta2">¿Desde que decada lleva aquí la hucha?</string>
     <string name="textoPregunta3">¿Quien puede meter el dinero en la hucha?</string>
     <string name="textoPregunta4">¿Que se hace con el dinero?</string>
 
@@ -93,7 +93,6 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
 
 
     <string name="txtZona3_2Dingdong_parte2">Como ya habéis leído todas vuestras leyendas, ¡podemos pasar a la siguiente parada!</string>
-
 
 
     <!-- Strings Zona 4 -->
@@ -114,6 +113,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
         \n\nPero podéis ver a Marijaia otros días también, ya que Marijaia puede ser encontrada por todo Bilbao, sacándose fotografías. \n\nEl último día de fiestas, queman a Marijaia durante un paseo por la Ría.</string>
 
     <!-- Strings Zona 6 -->
+    <string name="txtZona6_2Dingdong">Pregunta a otras pesonas estas preguntas. Las respuestas de cada una estan abajo de ellas. Si acierta pulasd el botón verde, en caso de fallo pulsad el botón rojo que contará los fallos en esa pregunta. Solo una por persona</string>
 
     <string name="txtZona6_4_Titulo">Calle Pelota y la Hucha de los Txikiteros</string>
 
@@ -137,8 +137,18 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
     <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
     <string name="zona5_1puzzle_de_marijaia">Puzzle de Marijaia</string>
-    <string name="zona3_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una leyenda que contega las palabras barro, peces y puente \n3.-Pulsar el boton orden para saber el orden que teneis que leer \n4.- leer la leyenda</string>
-    <string name="zonas4_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una rima que contega la palabra baldosa \n3.-Pulsar el boton comprobar</string>
+<!--<<<<<<< HEAD-->
+   <string name="zonas4_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una rima que contega la palabra baldosa \n3.-Pulsar el boton comprobar</string>
 
+=======
+    <string name="en_la_calle_pelota">En la calle pelota</string>
+    <string name="el_dinero_se_dona">El dinero se dona</string>
+    <string name="cualquiera_puede">Cualquiera puede</string>
+    <string name="d_cada_de_los_90">Década de los 90</string>
+    <string name="pregunta_sin_miedo">PREGUNTA SIN MIEDO</string>
+    <string name="txtMapa_Introduccion">Bienvenidos al casco viejo de Bilbao. Una vez aquí, debereis pasar por cada una de las paradas y completar las diversas actividades para desbloquear una actividad final. \n\nArriba a la derecha encontraremos un contador que nos va indiciando cuántas paradas hemos completado. \n\nComenzaremos por el Mercado de la Ribera, en el manual de usuario podrás encontar el orden recomendado de las paradas,</string>
+    <string name="alumnos_nombre">Nombre: </string>
+    <string name="alumnos_jugadores">Jugadores</string>
+>>>>>>> master
 
 </resources>

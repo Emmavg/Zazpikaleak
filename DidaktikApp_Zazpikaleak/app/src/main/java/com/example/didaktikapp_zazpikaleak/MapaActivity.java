@@ -1,9 +1,12 @@
 package com.example.didaktikapp_zazpikaleak;
 
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -16,14 +19,18 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.didaktikapp_zazpikaleak.databinding.ActivityMapaBinding;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MapaActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapaActivity extends FragmentActivity implements OnMapReadyCallback, MapaActivity_Dialogo.OnDialogoConfirmacionListener {
 
     private GoogleMap mMap;
     private ActivityMapaBinding binding;
     private Marker marker;
     private int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0, cont6 = 0, cont7 = 0;
     private String titulo = "";
+    private TextView contAct;
+    private MapaActivity_Dialogo dialogo;
+    private FloatingActionButton ayuda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +38,31 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
 
         binding = ActivityMapaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        contAct = findViewById(R.id.contadorActividades);
+        ayuda = findViewById(R.id.ayudaMapa);
 
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        dialogo = new MapaActivity_Dialogo();
+        dialogo.show(fragmentManager, "Ayuda");
+
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+        ayuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogo = new MapaActivity_Dialogo();
+                dialogo.show(fragmentManager, "Ayuda");
+            }
+        });
+
+    }
+
+    @Override
+    public void onPossitiveButtonClick() {
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -128,6 +159,8 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
         // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
         ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
         ProgresoDao pd = new ProgresoDao();
+
+        contAct.setText(pd.actividadesHechas(zazpidbh)+"");
 
         // Consulta a la bbdd si está hecho o no para crearlo de un color o de otro
         if (pd.isHecha(zazpidbh,"Actividad 1")){

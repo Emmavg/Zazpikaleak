@@ -64,7 +64,7 @@
                 android:backgroundTint="#5020C2"
                 android:layout_marginHorizontal="20dp"
                 android:outlineSpotShadowColor="@color/white"
-                android:src="@drawable/ic_action_name"
+                android:src="@drawable/ic_ayuda"
                 app:fabSize="normal"
                 app:showMotionSpec="@android:anim/fade_in"
                 app:useCompatPadding="true"/>
