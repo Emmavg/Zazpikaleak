@@ -11,6 +11,7 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -26,6 +27,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
     private boolean bienPieza1,bienPieza2,bienPieza3,bienPieza4,bienPieza5,bienPieza6;
     private FloatingActionButton duda;
     private Zona5_1_DialogoDuda dialogoDuda;
+    private RelativeLayout zona5_1_dindon;
 
 
     @Override
@@ -77,6 +79,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
 
         btnSiguiente=findViewById(R.id.btnZona5_1_Siguiente);
         duda = findViewById(R.id.btnDuda);
+        zona5_1_dindon = findViewById(R.id.zona5_1_dindon);
 
     }
 
@@ -253,6 +256,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 }
                 if(bienPieza1 && bienPieza2 && bienPieza3 && bienPieza4 && bienPieza5 && bienPieza6 ){
                     btnSiguiente.setEnabled(true);
+                    zona5_1_dindon.setVisibility(view.VISIBLE);
                 }
 
 

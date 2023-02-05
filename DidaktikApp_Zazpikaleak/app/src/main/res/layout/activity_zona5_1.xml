@@ -195,6 +195,33 @@
                 app:fabSize="normal"
                 app:showMotionSpec="@android:anim/fade_in"
                 app:useCompatPadding="true" />
+            <RelativeLayout
+                android:id="@+id/zona5_1_dindon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bocadillo_cuadrado"
+                    android:fontFamily="@font/nunitoregular"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="50dp"
+                    android:text="@string/txtZona3_2Dingdong"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/dindonfunko" />
+
+            </RelativeLayout>
             <Button
                 android:id="@+id/btnZona5_1_Siguiente"
                 android:layout_width="wrap_content"
