@@ -10,6 +10,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, View.OnLongClickListener {
 
@@ -20,6 +23,9 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
 
     private View vaux;
 
+    private FloatingActionButton duda;
+    private Zona8_2_DialogoDuda dialogoDuda;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,19 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
         setContentView(R.layout.activity_zona8_2);
         findViews();
         implementEvents();
+
+        duda=findViewById(R.id.btnDuda);
+
+        //********************************* Boton Dudas ***************************
+        duda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogoDuda = new Zona8_2_DialogoDuda();
+                dialogoDuda.show(fragmentManager, "Pasos Parada");
+
+            }
+        });
     }
 
     //Find all views and set Tag to all draggable views

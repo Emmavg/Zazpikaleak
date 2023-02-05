@@ -102,6 +102,19 @@
                 android:text="@string/Zona8_2_PlazaNueva"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnDuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|end"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#5020C2"
+                android:src="@drawable/ic_ayuda"
+                app:fabSize="normal"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true" />
         </LinearLayout>
     </LinearLayout>
 

@@ -3,6 +3,7 @@ package com.example.didaktikapp_zazpikaleak;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -93,6 +94,20 @@ public class Zona6_4 extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+        btnZona6_4_Siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Zona6_4.this, MapaActivity.class);
+
+                // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+//                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+//                ProgresoDao pd = new ProgresoDao();
+//                pd.actHecha(zazpidbh,"Actividad 11");
+
+                startActivity(intent);
+                finish();
             }
         });
     }

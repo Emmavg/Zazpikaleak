@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, View.OnLongClickListener {
 
@@ -21,6 +24,8 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
     private View vaux,pieza1,pieza2,pieza3,pieza4,pieza5,pieza6;
     private Button btnSiguiente;
     private boolean bienPieza1,bienPieza2,bienPieza3,bienPieza4,bienPieza5,bienPieza6;
+    private FloatingActionButton duda;
+    private Zona5_1_DialogoDuda dialogoDuda;
 
 
     @Override
@@ -30,6 +35,19 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
         findViews();
         implementEvents();
         btnSiguiente.setEnabled(false);
+
+        duda = findViewById(R.id.btnDuda);
+
+        //********************************* Boton Dudas ***************************
+        duda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogoDuda = new Zona5_1_DialogoDuda();
+                dialogoDuda.show(fragmentManager, "Pasos Parada");
+
+            }
+        });
     }
     public void Siguiente(View v){
         Intent i = new Intent(Zona5_1.this, Zona5_2.class);
@@ -58,6 +76,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
         pieza6 = findViewById(R.id.pieza6);
 
         btnSiguiente=findViewById(R.id.btnZona5_1_Siguiente);
+        duda = findViewById(R.id.btnDuda);
 
     }
 
