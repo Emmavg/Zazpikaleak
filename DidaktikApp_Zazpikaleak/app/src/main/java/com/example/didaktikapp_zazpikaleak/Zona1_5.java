@@ -11,12 +11,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Zona1_5 extends AppCompatActivity {
 
     private ImageView fotoAntigua;
     private TextView pista;
     private MediaPlayer audio;
-    private Button btnSiguiente;
+    private FloatingActionButton btnSiguiente;
     final Handler handler = new Handler();
 
     @Override

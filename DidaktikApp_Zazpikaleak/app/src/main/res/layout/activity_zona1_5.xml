@@ -87,15 +87,19 @@
 
             </RelativeLayout>
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/zona1_5_btnSiguiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
+
+                android:backgroundTint="#5020C2"
+                android:src="@drawable/ic_siguiente"
+                app:fabSize="normal"
                 android:visibility="invisible"
-                android:layout_gravity="center"
-                android:text="@string/btnZona1_Siguiente">
-            </Button>
+                android:layout_gravity="right"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true" />
+
 
         </LinearLayout>
     </ScrollView>

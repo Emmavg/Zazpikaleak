@@ -26,11 +26,12 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private ActivityMapaBinding binding;
     private Marker marker;
-    private int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0, cont6 = 0, cont7 = 0;
     private String titulo = "";
     private TextView contAct;
     private MapaActivity_Dialogo dialogo;
     private FloatingActionButton ayuda;
+    private boolean inicio = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +42,15 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
         contAct = findViewById(R.id.contadorActividades);
         ayuda = findViewById(R.id.ayudaMapa);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        dialogo = new MapaActivity_Dialogo();
-        dialogo.show(fragmentManager, "Ayuda");
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        ProgresoDao pd = new ProgresoDao();
+
+        if(pd.actividadesHechas(zazpidbh) == 0 && !inicio) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            dialogo = new MapaActivity_Dialogo();
+            dialogo.show(fragmentManager, "Ayuda");
+            inicio = true;
+        }
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
