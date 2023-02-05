@@ -112,7 +112,10 @@ public class MainActivity extends AppCompatActivity implements MainActivity_Dial
         // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
         ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
         ProgresoDao pd = new ProgresoDao();
+        AlumnoDao ad = new AlumnoDao();
         pd.juegoNuevo(zazpidbh);
+        ad.juegoNuevo(zazpidbh);
+
 
         Intent intent = new Intent(MainActivity.this, MainActivity.class);
         startActivity(intent);
