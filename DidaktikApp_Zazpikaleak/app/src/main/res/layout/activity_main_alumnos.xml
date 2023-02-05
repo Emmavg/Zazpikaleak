@@ -20,30 +20,23 @@
         android:textStyle="bold"
         android:fontFamily="@font/nunitomedium"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <ListView
             android:id="@+id/vista"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="500dp"
             android:layout_margin="15dp" />
-    terial.floatingactionbutton.FloatingActionButton
-    android:id="@+id/btnAddAlumnos"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="right"
-    android:layout_marginRight="20dp"
-    android:backgroundTint="#5020C2"
 
-    android:src="@drawable/ic_add"
-    app:fabSize="normal"
-    app:showMotionSpec="@android:anim/fade_in"
-    app:useCompatPadding="true" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddAlumnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#5020C2"
 
-
-
-    <com.google.android.maandroid:layout_height=""
+            android:src="@drawable/ic_add"
+            app:fabSize="normal"
+            app:showMotionSpec="@android:anim/fade_in"
+            app:useCompatPadding="true" />
 
 </LinearLayout>
