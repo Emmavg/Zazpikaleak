@@ -122,7 +122,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtZona6_4_Narrador_2">Los txikiteros y las txikiteras para pagar ponen un bote y al final del día, el dinero que les ha sobrado de ese bote lo echan a la hucha solidaria de la calle Pelota. Cualquier persona puede meter dinero ya que cada 11 de octubre (Día del Txikitero) se abre la hucha para recoger los ahorros y donarlos a causas benéficas. ¿Qué os parece esta idea? </string>
 
     <!-- Strings Zona 7 -->
-
+    <string name="txtZona7_3Dingdong">En esta ocasión tendreis que realizar esta sopa de letras. Teneis las palabras a buscar debajo de la sopa, buscalas en diagonal, vertical y horizontal</string>
     <string name="txtZona7_1_Titulo">Plaza Nueva</string>
 
     <string name="txtZona7_1_Narrador_1">¿Alguna vez habéis estado aquí? ¿Para qué habéis venido? La Plaza Nueva es un lugar increíble para los que coleccionan cosas. Todos los domingos hay un mercadillo y se pueden encontrar todo tipo de antigüedades, monedas, sellos, flores, etc. </string>
@@ -137,10 +137,10 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
     <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
     <string name="zona5_1puzzle_de_marijaia">Puzzle de Marijaia</string>
-<!--<<<<<<< HEAD-->
+
    <string name="zonas4_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una rima que contega la palabra baldosa \n3.-Pulsar el boton comprobar</string>
 
-=======
+
     <string name="en_la_calle_pelota">En la calle pelota</string>
     <string name="el_dinero_se_dona">El dinero se dona</string>
     <string name="cualquiera_puede">Cualquiera puede</string>
@@ -155,5 +155,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="nombreJugador">Nombre</string>
     <string name="txtBorrrarAlumno">¿Quieres eliminar el alumno seleccionado?</string>
     >>>>>>> master
+
+
 
 </resources>
