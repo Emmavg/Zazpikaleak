@@ -16,6 +16,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -25,7 +27,7 @@ public class Zona1_3 extends AppCompatActivity implements Zona1_3_Dialogo.OnDial
     private ImageButton imb00, imb01, imb02, imb03, imb04, imb05, imb06, imb07, imb08, imb09;
     private ImageButton[] tablero = new ImageButton[10];
     private RelativeLayout rlayout;
-    private Button botonReiniciar, botonSiguiente;
+    private FloatingActionButton botonReiniciar, botonSiguiente;
     private MediaPlayer audio;
     private int aciertos;
     private Zona1_3_Dialogo dialogo;

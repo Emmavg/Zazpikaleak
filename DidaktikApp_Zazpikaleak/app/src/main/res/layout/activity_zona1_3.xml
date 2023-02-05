@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background= "@color/fondo">
+    android:background="@color/fondo">
 
     <TextView
         android:layout_marginTop="40dp"
@@ -193,20 +194,28 @@
 
                 </RelativeLayout>
 
-                <Button
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/zona1_3_botonJuegoReiniciar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="reiniciar"></Button>
 
-                <Button
+                    android:backgroundTint="#5020C2"
+                    android:src="@drawable/ic_restart"
+                    app:fabSize="normal"
+                    app:showMotionSpec="@android:anim/fade_in"
+                    app:useCompatPadding="true" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/zona1_3_btnSiguiente"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:visibility="visible"
-                    android:text="@string/btnZona1_Siguiente">
-                </Button>
+
+                    android:backgroundTint="#5020C2"
+                    android:src="@drawable/ic_siguiente"
+                    app:fabSize="normal"
+                    android:layout_gravity="right"
+                    app:showMotionSpec="@android:anim/fade_in"
+                    app:useCompatPadding="true" />
 
             </LinearLayout>
 
