@@ -151,6 +151,8 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="alumnos_jugadores">Jugadores</string>
     <string name="zonas8_2_pasos">Pasos: \n1.-Mantener el dedo en el texto que quieres mover \n2.-Soltar el dedo en la zona que lo quieres soltar(Si se Pone verde esque lo has hecho bien)</string>
     <string name="zonas5_1_pasos">Pasos: \n1.-Mantener el dedo en la pieza que quieres mover \n2.-Soltar el dedo en la zona que lo quieres soltar(Solo se quedara si esta bien)</string>
+    <string name="aniadirAlumnos">Nuevo Jugador</string>
+    <string name="nombreJugador">Nombre</string>
     >>>>>>> master
 
 </resources>
