@@ -18,6 +18,16 @@ public class AlumnoDao {
         return true;
     }
 
+    public boolean borrarAlumno(ZazpiKaleakSQLiteHelper zazpidbh, String nombre) {
+
+        SQLiteDatabase db = zazpidbh.getWritableDatabase();
+        if (db != null){
+            db.execSQL("DELETE FROM Alumno WHERE nombre ='"+nombre+"'");
+        }
+        db.close();
+        return true;
+    }
+
     // Guardar todos los nombres de los alumnos en un array
     public ArrayList<String> cogerAlumnos(ZazpiKaleakSQLiteHelper zazpidbh){
         SQLiteDatabase db = zazpidbh.getWritableDatabase();

@@ -24,12 +24,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainAlumnos extends AppCompatActivity implements MainAlumnos_Dialogo.OnDialogoConfirmacionListener {
+public class MainAlumnos extends AppCompatActivity implements MainAlumnos_Dialogo.OnDialogoConfirmacionListener, MainAlumnos_Borrar_Dialogo.OnDialogoConfirmacionListener {
 
     private ListView vista;
     private ArrayList<String> alum;
     private FloatingActionButton addAlum;
     private MainAlumnos_Dialogo dialogo;
+    private MainAlumnos_Borrar_Dialogo dialogoBorrar;
+    private String opcionSeleccionada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +50,7 @@ public class MainAlumnos extends AppCompatActivity implements MainAlumnos_Dialog
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 dialogo = new MainAlumnos_Dialogo();
-                dialogo.show(fragmentManager, "Añadir Alumno");
+                dialogo.show(fragmentManager, "Añadir Jugador");
             }
         });
 
@@ -65,10 +67,12 @@ public class MainAlumnos extends AppCompatActivity implements MainAlumnos_Dialog
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 //Seleccion del alumno:
-                String opcionSeleccionada =
+                opcionSeleccionada =
                         (String) parent.getItemAtPosition(position);
                 //long opcion = parent.getItemIdAtPosition(position);
-
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                dialogoBorrar = new MainAlumnos_Borrar_Dialogo();
+                dialogoBorrar.show(fragmentManager, "Eliminar JugadorS");
             }
         });
     }
@@ -79,14 +83,26 @@ public class MainAlumnos extends AppCompatActivity implements MainAlumnos_Dialog
         if (!nombre.isEmpty()){
             ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
             AlumnoDao ad = new AlumnoDao();
-            ad.insertarAlumno(zazpidbh, nombre);
-            Toast.makeText(this, "Jugador añadido correctamente" , Toast.LENGTH_SHORT).show();
+            if (ad.insertarAlumno(zazpidbh, nombre)){
+                Toast.makeText(this, "Jugador añadido correctamente" , Toast.LENGTH_SHORT).show();
+            }
             Intent i = new Intent(MainAlumnos.this, MainAlumnos.class);
             startActivity(i);
             finish();
-
         }
 
+    }
+
+    @Override
+    public void onPossitiveBorrarButtonClick() {
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        AlumnoDao ad = new AlumnoDao();
+        if(ad.borrarAlumno(zazpidbh, opcionSeleccionada)){
+            Toast.makeText(this, "Jugador eliminado correctamente" , Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(MainAlumnos.this, MainAlumnos.class);
+            startActivity(i);
+            finish();
+        }
     }
 
     class AdaptadorAlumnos extends ArrayAdapter<String> {

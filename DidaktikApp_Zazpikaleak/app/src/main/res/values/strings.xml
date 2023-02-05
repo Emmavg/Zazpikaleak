@@ -6,7 +6,7 @@
     <string name="btnMenuPrincipal">Empezar</string>
     <string name="txtBienvenidaApp_Dingdong">¡Hola, me llamo Din Don y voy a ser vuestro guía durante esta aventura!</string>
     <string name="txtBienvenidaContinuacionApp_Dingdong">¡Bienvenid@ de nuevo, continuemos con nuestra aventura!</string>
-    <string name="txtReseteoBase">Con esta acción perderás todas las paradas que has realizado.\n\n¿Estás seguro de querer empezar de nuevo?</string>
+    <string name="txtReseteoBase">Con esta acción perderás todas las paradas que has realizado y se eliminarán todos los jugadores.\n\n¿Estás seguro de querer empezar de nuevo?</string>
     <string name="creditos">\@DinDon2023</string>
     <string name="creditosCJ">\tAiram Brito\n\tAlayn Marcos\n\tEmma Vélez\n\tMiguel Angel Fuente </string>
     <string name="creditosUPV">\tAmaia Quintanilla\n\tLeire Taboada\n\tOlatz Sagastizabal</string>
@@ -153,6 +153,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="zonas5_1_pasos">Pasos: \n1.-Mantener el dedo en la pieza que quieres mover \n2.-Soltar el dedo en la zona que lo quieres soltar(Solo se quedara si esta bien)</string>
     <string name="aniadirAlumnos">Nuevo Jugador</string>
     <string name="nombreJugador">Nombre</string>
+    <string name="txtBorrrarAlumno">¿Quieres eliminar el alumno seleccionado?</string>
     >>>>>>> master
 
 </resources>
