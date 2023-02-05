@@ -3,6 +3,7 @@ package com.example.didaktikapp_zazpikaleak;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -50,6 +51,13 @@ public class Zona7_1 extends AppCompatActivity {
                 if (hasFocus) {
                     scroller1.fullScroll(View.FOCUS_DOWN);
                 }
+            }
+        });
+        btnZona7_1_Siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Zona7_1.this, Zona7_3.class);
+                startActivity(i);
             }
         });
         //Audio Narrador
