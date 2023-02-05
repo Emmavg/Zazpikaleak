@@ -18,17 +18,18 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainAlumnos extends AppCompatActivity implements MainActivity_Dialogo.OnDialogoConfirmacionListener {
+public class MainAlumnos extends AppCompatActivity implements MainAlumnos_Dialogo.OnDialogoConfirmacionListener {
 
     private ListView vista;
     private ArrayList<String> alum;
     private FloatingActionButton addAlum;
-    private MainAlumnosDialogo dialogo;
+    private MainAlumnos_Dialogo dialogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +47,7 @@ public class MainAlumnos extends AppCompatActivity implements MainActivity_Dialo
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
-                dialogo = new MainAlumnosDialogo();
+                dialogo = new MainAlumnos_Dialogo();
                 dialogo.show(fragmentManager, "Añadir Alumno");
             }
         });
@@ -67,6 +68,7 @@ public class MainAlumnos extends AppCompatActivity implements MainActivity_Dialo
                 String opcionSeleccionada =
                         (String) parent.getItemAtPosition(position);
                 //long opcion = parent.getItemIdAtPosition(position);
+
             }
         });
     }
@@ -78,7 +80,13 @@ public class MainAlumnos extends AppCompatActivity implements MainActivity_Dialo
             ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
             AlumnoDao ad = new AlumnoDao();
             ad.insertarAlumno(zazpidbh, nombre);
+            Toast.makeText(this, "Jugador añadido correctamente" , Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(MainAlumnos.this, MainAlumnos.class);
+            startActivity(i);
+            finish();
+
         }
+
     }
 
     class AdaptadorAlumnos extends ArrayAdapter<String> {
