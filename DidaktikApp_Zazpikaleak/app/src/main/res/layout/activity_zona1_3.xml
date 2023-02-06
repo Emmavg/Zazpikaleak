@@ -202,8 +202,7 @@
                     android:backgroundTint="#5020C2"
                     android:src="@drawable/ic_restart"
                     app:fabSize="normal"
-                    app:showMotionSpec="@android:anim/fade_in"
-                    app:useCompatPadding="true" />
+                    app:showMotionSpec="@android:anim/fade_in"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/zona1_3_btnSiguiente"
@@ -215,6 +214,7 @@
                     app:fabSize="normal"
                     android:layout_gravity="right"
                     android:visibility="invisible"
+                    android:layout_marginRight="20dp"
                     app:showMotionSpec="@android:anim/fade_in"
                     app:useCompatPadding="true" />
 
