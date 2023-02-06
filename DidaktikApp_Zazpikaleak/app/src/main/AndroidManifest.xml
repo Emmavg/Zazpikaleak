@@ -6,6 +6,9 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,6 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DidaktikApp_Zazpikaleak"
         tools:targetApi="31">
+
+<!--        &lt;!&ndash; PERMISO PARA PODER UTILIZAR EL MAPA &ndash;&gt;-->
+<!--        <service-->
+<!--            android:name="MyNavigationService"-->
+<!--            android:foregroundServiceType="location"/>-->
+
+
         <activity
             android:name=".Zona8_2_DialogoFelicitaciones"
             android:exported="false" />
