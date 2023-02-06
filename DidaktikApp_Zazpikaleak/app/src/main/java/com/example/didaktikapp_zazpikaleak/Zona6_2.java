@@ -1,5 +1,6 @@
 package com.example.didaktikapp_zazpikaleak;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,10 +11,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Zona6_2 extends AppCompatActivity {
 
     TextView txtPregunta1, txtPregunta2, txtPregunta3, txtPregunta4;
-    Button btnSiguente,  btnfallo1, btnfallo2, btnfallo3, btnfallo4;
+    Button btnfallo1, btnfallo2, btnfallo3, btnfallo4;
+    FloatingActionButton btnSiguente;
     ImageButton btnacierto1, btnacierto2, btnacierto3, btnacierto4;
     private Zona6_2_Dialogo dialogo;
 
@@ -24,7 +28,7 @@ public class Zona6_2 extends AppCompatActivity {
 
         setContentView(R.layout.activity_zona6_2);
 
-        btnSiguente = findViewById(R.id.zona4_2btnSiguiente);
+        btnSiguente = findViewById(R.id.zona6_2btnSiguiente);
 
         txtPregunta1 = findViewById(R.id.Zona4_2txtPregunta1);
         txtPregunta2 = findViewById(R.id.Zona4_2txtPregunta2);
@@ -46,7 +50,25 @@ public class Zona6_2 extends AppCompatActivity {
         dialogo = new Zona6_2_Dialogo();
         dialogo.show(fragmentManager, "Información Juego");
 
+        btnSiguente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Zona6_2.this, Zona6_4.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona6_2.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     //Accion al pulsar un boton verde
     public void pulsarAcierto(View view){
         //Buscamos cual de los cuatro botones se ha pulsado
@@ -81,7 +103,7 @@ public class Zona6_2 extends AppCompatActivity {
                 break;
         }
         if(!btnacierto1.isEnabled() && !btnacierto2.isEnabled() && !btnacierto3.isEnabled() && !btnacierto4.isEnabled()){
-            btnSiguente.setEnabled(true);
+            btnSiguente.setVisibility(view.VISIBLE);
         }
     }
 

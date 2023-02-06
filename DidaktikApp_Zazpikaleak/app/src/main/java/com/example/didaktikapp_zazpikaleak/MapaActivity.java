@@ -135,13 +135,13 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
                     }
 
                     if (marker.getTitle().equals("Teatro Arriaga")) {
-                        Intent intent = new Intent(MapaActivity.this, Zona5_2.class);
+                        Intent intent = new Intent(MapaActivity.this, Zona5_1.class);
                         startActivity(intent);
                         finish();
                     }
 
                     if (marker.getTitle().equals("Calle Pelota")) {
-                        Intent intent = new Intent(MapaActivity.this, Zona6_4.class);
+                        Intent intent = new Intent(MapaActivity.this, Zona6_2.class);
                         startActivity(intent);
                         finish();
                     }

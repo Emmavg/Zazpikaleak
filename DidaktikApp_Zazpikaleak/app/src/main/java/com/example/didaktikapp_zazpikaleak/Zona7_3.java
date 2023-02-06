@@ -3,6 +3,7 @@ package com.example.didaktikapp_zazpikaleak;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,9 +38,8 @@ public class Zona7_3 extends AppCompatActivity {
             "S","E","T","N","A","R","U","A","T","S","E","R","I","Ñ",
             "U","J","B","T","S","B","L","V","T","B","M","U","Z","A"
     };
-    private TextView sopatxt;
     private TextView resultado;
-    private Button btnSiguiente;
+    private FloatingActionButton btnSiguiente;
 
 
 
@@ -49,6 +51,23 @@ public class Zona7_3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zona7_3_linear);
         cargarMapa();
+        btnSiguiente = findViewById(R.id.zona7_3btn_Siguiente);
+
+
+        btnSiguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Zona7_3.this, MapaActivity.class);
+
+                // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+                ProgresoDao pd = new ProgresoDao();
+                pd.actHecha(zazpidbh,"Actividad 7");
+
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
         // Quitar la barra de notificaciones, bateria, hora, etc
@@ -56,9 +75,8 @@ public class Zona7_3 extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
         decorView.setSystemUiVisibility(uiOptions);
 
-        TextView resultado = findViewById(R.id.resultado);
+        resultado = findViewById(R.id.resultado);
 
-        Button btnSiguiente = findViewById(R.id.zona7_3btn_Siguiente);
 
         GridView sopa = findViewById(R.id.sopaLetras);
         sopa.setHorizontalSpacing(30);
@@ -96,7 +114,7 @@ public class Zona7_3 extends AppCompatActivity {
                                     palabras.put(palabra,true);
 
                                     if(comprobarAcertadas()){
-                                        btnSiguiente.setEnabled(true);
+                                        btnSiguiente.setVisibility(view.VISIBLE);
                                     }
 
                                     for(View vposi:listaPosible){
@@ -131,6 +149,8 @@ public class Zona7_3 extends AppCompatActivity {
             return false;
         });
     }
+
+
     private void cargarMapa() {
         palabras.put((TextView)findViewById(R.id.zona7_txtmercadillo), false);
         palabras.put((TextView)findViewById(R.id.zona7_txtcolumnas), false);
@@ -149,5 +169,13 @@ public class Zona7_3 extends AppCompatActivity {
             }
         }
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona7_3.this, Zona7_1.class);
+        startActivity(intent);
+        finish();
     }
 }

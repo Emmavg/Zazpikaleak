@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +25,7 @@ public class Zona6_4 extends AppCompatActivity {
 
     private MediaPlayer audio;
     private ImageView imgZona6_4_Foto1,imgZona6_4_Foto2,imgZona6_4_Foto3,imgZona6_4_Foto4;
-    private Button btnZona6_4_Siguiente;
+    private FloatingActionButton btnZona6_4_Siguiente;
     private TextView txtZona6_4_Narrador_1, txtZona6_4_Narrador_2;
 
     @Override
@@ -102,9 +104,9 @@ public class Zona6_4 extends AppCompatActivity {
                 Intent intent = new Intent(Zona6_4.this, MapaActivity.class);
 
                 // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
-//                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
-//                ProgresoDao pd = new ProgresoDao();
-//                pd.actHecha(zazpidbh,"Actividad 11");
+                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+                ProgresoDao pd = new ProgresoDao();
+                pd.actHecha(zazpidbh,"Actividad 6");
 
                 startActivity(intent);
                 finish();

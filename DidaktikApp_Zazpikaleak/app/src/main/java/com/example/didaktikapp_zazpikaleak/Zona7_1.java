@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -22,7 +24,7 @@ public class Zona7_1 extends AppCompatActivity {
 
     private MediaPlayer audio;
     private ImageView imgZona7_1_Foto1,imgZona7_1_Foto2,imgZona7_1_Foto3,imgZona7_1_Foto4;
-    private Button btnZona7_1_Siguiente;
+    private FloatingActionButton btnZona7_1_Siguiente;
     private TextView txtZona7_1_Narrador_1, txtZona7_1_Narrador_2;
 
     @Override
@@ -58,6 +60,7 @@ public class Zona7_1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(Zona7_1.this, Zona7_3.class);
                 startActivity(i);
+                finish();
             }
         });
         //Audio Narrador
@@ -109,6 +112,9 @@ public class Zona7_1 extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         audio.stop();
+        Intent intent = new Intent(Zona7_1.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     //Se visualiza el texto palabra por palabra

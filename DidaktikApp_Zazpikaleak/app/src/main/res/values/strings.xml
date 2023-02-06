@@ -73,21 +73,21 @@ La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se ll
 
     <string name="txtZona3_1_Narrador_3">Este chico se ahogó en las inundaciones que hubo en el siglo XVII, pero ¿sabéis que hubo nuevas inundaciones más recientemente? Durante la tarde y noche del 26 de Agosto de 1983 y celebrándose la Aste Nagusia de Bilbao, llovió mucho y la ría se desbordó.
 Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de barro y hubo gente que murió o acabó con heridas graves. Aunque hubo mucha gente que ayudó, tardaron muchos días en limpiarlo todo.</string>
-    <string name="zona3_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una leyenda que contega las palabras barro, peces y puente \n3.-Pulsar el boton orden para saber el orden que teneis que leer \n4.- leer la leyenda</string>
+    <string name="zona3_1_pasos">Pasos: \n1.- Darle al botón para hacer los grupos \n2.-Escribir una leyenda que contega las palabras barro, peces y puente \n3.-Pulsar el botón orden para saber el orden que tenéis que leer \n4.- Leer la leyenda</string>
     <string name="btnZona3_2_HACER_LOS_GRUPOS">Hacer los grupos</string>
     <string name="btnZona3_2_Escribe_leyenda">Escribe la leyenda</string>
     <string name="btnZona3_2_ORDEN">Orden</string>
-    <string name="que_rima_mas_original">Que rima mas original</string>
+    <string name="que_rima_mas_original">Que rima más original</string>
     <string name="escribe_tu_rima">Escribe tu rima sobre la baldosa</string>
 
     <string name="txtBienHecho">¡Bien hecho!</string>
     <string name="title_activity_mapa">MapaActivity</string>
-    <string name="textoPregunta1">¿Donde está la hucha de los txikiteros?</string>
-    <string name="textoPregunta2">¿Desde que decada lleva aquí la hucha?</string>
-    <string name="textoPregunta3">¿Quien puede meter el dinero en la hucha?</string>
-    <string name="textoPregunta4">¿Que se hace con el dinero?</string>
+    <string name="textoPregunta1">¿Dónde está la hucha de los txikiteros?</string>
+    <string name="textoPregunta2">¿Desde qué decada lleva aquí la hucha?</string>
+    <string name="textoPregunta3">¿Quién puede meter el dinero en la hucha?</string>
+    <string name="textoPregunta4">¿Qué se hace con el dinero?</string>
 
-    <string name="txtZona3_1Dingdong">Ahora por grupos teneis que inventaros una leyenda de entre 30 a 40 palabras que y tienen que aparecer las palabras: <font color='#EE0000'>BARRO - PUENTE - PECES</font></string>
+    <string name="txtZona3_1Dingdong">Ahora por grupos tenéis que inventaros una leyenda de entre 30 a 40 palabras que y tienen que aparecer las palabras: <font color='#EE0000'>BARRO - PUENTE - PECES</font></string>
 
     <string name="txtZona3_2Dingdong">¡Me ha encantado vuestra leyenda!</string>
 
@@ -113,11 +113,11 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
         \n\nPero podéis ver a Marijaia otros días también, ya que Marijaia puede ser encontrada por todo Bilbao, sacándose fotografías. \n\nEl último día de fiestas, queman a Marijaia durante un paseo por la Ría.</string>
 
     <!-- Strings Zona 6 -->
-    <string name="txtZona6_2Dingdong">Pregunta a otras pesonas estas preguntas. Las respuestas de cada una estan abajo de ellas. Si acierta pulasd el botón verde, en caso de fallo pulsad el botón rojo que contará los fallos en esa pregunta. Solo una por persona</string>
+    <string name="txtZona6_2Dingdong">Pregunta a otras pesonas estas preguntas. Las respuestas de cada una están debajo de ellas. \n\nSi acierta pulsad el botón verde, en caso de fallo pulsad el botón rojo que contará los fallos en esa pregunta. Una pregunta por persona</string>
 
     <string name="txtZona6_4_Titulo">Calle Pelota y la Hucha de los Txikiteros</string>
 
-    <string name="txtZona6_4_Narrador_1">El Casco Viejo tiene muchos bares que están en la ruta de los pintxos o del txikiteo. Los txikiteros son un grupo de amigos que quedan en el Casco Viejo para comer pintxos y tomar txikitos (vasos de vino), de ahí su nombre Al principio y durante muchos años fue una tradición totalmente masculina y las mujeres no podían hacerlo. En los últimos años las mujeres han podido ir con los hombres.</string>
+    <string name="txtZona6_4_Narrador_1">El Casco Viejo tiene muchos bares que están en la ruta de los pintxos o del txikiteo. Los txikiteros son un grupo de amigos que quedan en el Casco Viejo para comer pintxos y tomar txikitos (vasos de vino), de ahí su nombre. Al principio y durante muchos años, fue una tradición totalmente masculina y las mujeres no podían hacerlo. En los últimos años las mujeres han podido ir con los hombres.</string>
 
     <string name="txtZona6_4_Narrador_2">Los txikiteros y las txikiteras para pagar ponen un bote y al final del día, el dinero que les ha sobrado de ese bote lo echan a la hucha solidaria de la calle Pelota. Cualquier persona puede meter dinero ya que cada 11 de octubre (Día del Txikitero) se abre la hucha para recoger los ahorros y donarlos a causas benéficas. ¿Qué os parece esta idea? </string>
 
@@ -144,7 +144,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="el_dinero_se_dona">El dinero se dona</string>
     <string name="cualquiera_puede">Cualquiera puede</string>
     <string name="d_cada_de_los_90">Década de los 90</string>
-    <string name="pregunta_sin_miedo">PREGUNTA SIN MIEDO</string>
+    <string name="pregunta_sin_miedo">Pregunta sin miedo !!!</string>
     <string name="txtMapa_Introduccion">Bienvenidos al casco viejo de Bilbao. Una vez aquí, debereis pasar por cada una de las paradas y completar las diversas actividades para desbloquear una actividad final. \n\nArriba a la derecha encontraremos un contador que nos va indiciando cuántas paradas hemos completado.</string>
     <string name="alumnos_nombre">Nombre: </string>
     <string name="alumnos_jugadores">Jugadores</string>
