@@ -189,13 +189,14 @@
                 android:id="@+id/btnDuda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_marginLeft="30dp"
                 android:layout_gravity="left|end"
                 android:backgroundTint="#5020C2"
                 android:src="@drawable/ic_ayuda"
                 app:fabSize="normal"
                 app:showMotionSpec="@android:anim/fade_in"
                 app:useCompatPadding="true" />
+
             <RelativeLayout
                 android:id="@+id/zona5_1_dindon"
                 android:layout_width="wrap_content"

@@ -58,6 +58,7 @@ public class Zona7_1 extends AppCompatActivity {
         btnZona7_1_Siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                audio.stop();
                 Intent i = new Intent(Zona7_1.this, Zona7_3.class);
                 startActivity(i);
                 finish();
