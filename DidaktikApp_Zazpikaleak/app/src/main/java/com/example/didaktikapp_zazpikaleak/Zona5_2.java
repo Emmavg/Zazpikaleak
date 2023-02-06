@@ -66,9 +66,9 @@ public class Zona5_2 extends AppCompatActivity {
                 Intent intent = new Intent(Zona5_2.this, MapaActivity.class);
 
                 // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
-//                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
-//                ProgresoDao pd = new ProgresoDao();
-//                pd.actHecha(zazpidbh,"Actividad 11");
+                ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+                ProgresoDao pd = new ProgresoDao();
+                pd.actHecha(zazpidbh,"Actividad 5");
 
                 startActivity(intent);
                 finish();
@@ -81,6 +81,9 @@ public class Zona5_2 extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         audio.stop();
+        Intent intent = new Intent(Zona5_2.this, Zona5_1.class);
+        startActivity(intent);
+        finish();
     }
 
     //Se visualiza el texto palabra por palabra
