@@ -212,7 +212,7 @@
                     android:fontFamily="@font/nunitoregular"
                     android:paddingHorizontal="30dp"
                     android:paddingVertical="50dp"
-                    android:text="@string/txtZona3_2Dingdong"
+                    android:text="@string/txtBienHecho"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
