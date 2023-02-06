@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Zona4_1 extends AppCompatActivity {
-    private Button btnGrupos, btnComprobar;
+    private Button btnGrupos,btnComprobar;
+    private MediaPlayer audio;
     private EditText txtRima;
     private Zona4_1_DialogoGrupos dialogoGrupos;
     private RelativeLayout relativeDidon1 ;
@@ -110,6 +112,9 @@ public class Zona4_1 extends AppCompatActivity {
                     txtRima.setBackgroundResource(R.drawable.zona3_2_bordes_edittext_bien);
                     relativeDidon1.setVisibility(View.VISIBLE);
                     btnSiguiente.setVisibility(view.VISIBLE);
+
+                    audio = MediaPlayer.create(Zona4_1.this, R.raw.audio_zona4_1_dindon);
+                    audio.start();
 
                 }else{
                     txtRima.setBackgroundResource(R.drawable.zona3_2_bordes_edittext_mal);
