@@ -17,6 +17,9 @@
         android:theme="@style/Theme.DidaktikApp_Zazpikaleak"
         tools:targetApi="31">
         <activity
+            android:name=".Zona8_2_DialogoFelicitaciones"
+            android:exported="false" />
+        <activity
             android:name=".MainAlumnos"
             android:exported="false">
             <meta-data
