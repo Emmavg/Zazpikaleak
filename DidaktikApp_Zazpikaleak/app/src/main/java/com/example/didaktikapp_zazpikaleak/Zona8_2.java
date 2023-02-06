@@ -2,6 +2,7 @@ package com.example.didaktikapp_zazpikaleak;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.DragEvent;
@@ -22,10 +23,13 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
     private LinearLayout LPuente, Lnada,LMercado,Lrivera,Lmarijaia,Lhucha,Lteatro,Lplaza;
 
     private View vaux;
+    private int contAciertos=0;
 
     private FloatingActionButton duda;
     private Zona8_2_DialogoDuda dialogoDuda;
+    private Zona8_2_DialogoFelicitaciones dialogoFelicitaciones;
 
+    private MediaPlayer audioDindong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +50,20 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
 
             }
         });
+
     }
+
+    private void checkAciertos(){
+        if(contAciertos == 8){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            dialogoFelicitaciones = new Zona8_2_DialogoFelicitaciones();
+            dialogoFelicitaciones.show(fragmentManager, "Felicidades");
+
+            audioDindong = MediaPlayer.create(Zona8_2.this, R.raw.audio_zona8_2_dindong);
+            audioDindong.start();
+        }
+    }
+
 
     //Find all views and set Tag to all draggable views
     private void findViews() {
@@ -208,6 +225,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("puente")){
                     if(container.getTag().toString().equals(dragData)){
                         puente.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         puente.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -215,6 +234,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("iglesia")){
                     if(container.getTag().toString().equals(dragData)){
                         iglesia.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         iglesia.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -222,6 +243,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("mercado")){
                     if(container.getTag().toString().equals(dragData)){
                         mercado.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         mercado.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -229,6 +252,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("rivera")){
                     if(container.getTag().toString().equals(dragData)){
                         rivera.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         rivera.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -236,6 +261,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("marijaia")){
                     if(container.getTag().toString().equals(dragData)){
                         marijaia.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         marijaia.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -243,6 +270,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("hucha")){
                     if(container.getTag().toString().equals(dragData)){
                         hucha.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         hucha.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -250,6 +279,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("teatro")){
                     if(container.getTag().toString().equals(dragData)){
                         teatro.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         teatro.setTextColor(getColor(android.R.color.holo_red_light));
                     }
@@ -257,6 +288,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 if(dragData.equals("plaza")){
                     if(container.getTag().toString().equals(dragData)){
                         plaza.setTextColor(getColor(android.R.color.holo_green_light));
+                        contAciertos++;
+                        checkAciertos();
                     }else{
                         plaza.setTextColor(getColor(android.R.color.holo_red_light));
                     }

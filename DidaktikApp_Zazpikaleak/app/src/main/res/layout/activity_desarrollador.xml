@@ -16,50 +16,50 @@
         android:id="@+id/desarrollador_btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Puente Iglesia San Anton"/>
+        android:text="El Arenal"/>
 
     <Button
         android:id="@+id/desarrollador_btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="El Arenal"/>
+        android:text="Ria Bilbao"/>
 
     <Button
         android:id="@+id/desarrollador_btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ria Bilbao"/>
+        android:text="Iglesia de San Nicolas"/>
 
     <Button
         android:id="@+id/desarrollador_btn5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iglesia de San Nicolas"/>
+        android:text="Teatro Arriaga"/>
 
     <Button
         android:id="@+id/desarrollador_btn6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Teatro Arriaga"/>
+        android:text="Calle Pelota"/>
 
 
     <Button
         android:id="@+id/desarrollador_btn7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calle Pelota"/>
+        android:text="Plaza Nueva"/>
 
     <Button
         android:id="@+id/desarrollador_btn8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Plaza Nueva"/>
+        android:text="Final"/>
 
     <Button
         android:id="@+id/desarrollador_btn9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Final" />
+        android:text="" />
 
     <Button
         android:id="@+id/desarrollador_btn10"

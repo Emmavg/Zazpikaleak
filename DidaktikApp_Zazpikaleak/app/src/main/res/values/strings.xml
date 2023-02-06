@@ -137,8 +137,6 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="pregunta_sin_miedo">Pregunta sin miedo !!!</string>
 
 
-
-
     <!-- Strings Zona 7 -->
 
     <string name="txtZona7_1_Titulo">Plaza Nueva</string>
@@ -160,7 +158,8 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
     <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
     <string name="zonas8_2_pasos">Pasos: \n1.-Mantener el dedo en el texto que quieres mover \n2.-Soltar el dedo en la zona que lo quieres soltar(Si se Pone verde esque lo has hecho bien)</string>
-
+    <string name="zonas8_2_felcicitaciones">    ¡Enhorabuena, eres capaz de reconocer el patrimonio del Casco Viejo!
+        Ahora, ya sabes lo que esconde esta zona de Bilbao.</string>
 
     <!-- Strings Zona Mapa -->
 
@@ -172,7 +171,6 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="nombreJugador">Nombre</string>
     <string name="txtBorrrarAlumno">¿Quieres eliminar el alumno seleccionado?</string>
     >>>>>>> master
-
 
 
 </resources>
