@@ -2,6 +2,7 @@ package com.example.didaktikapp_zazpikaleak;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,7 +17,7 @@ import androidx.fragment.app.FragmentManager;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, View.OnLongClickListener {
+public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, View.OnLongClickListener, Zona8_2_DialogoFelicitaciones.OnDialogoConfirmacionListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private TextView puente,iglesia,mercado,rivera,marijaia,hucha,teatro,plaza;
@@ -55,7 +56,7 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
     }
 
     private void checkAciertos(){
-        if(contAciertos == 8){
+        if(contAciertos == 1){
             FragmentManager fragmentManager = getSupportFragmentManager();
             dialogoFelicitaciones = new Zona8_2_DialogoFelicitaciones();
             dialogoFelicitaciones.show(fragmentManager, "Felicidades");
@@ -65,7 +66,13 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
         }
     }
 
+    public void onPossitiveButtonClick(){
+        audioDindong.stop();
+        Intent intent = new Intent(Zona8_2.this, MainActivity.class);
+        startActivity(intent);
+        finish();
 
+    }
 
 
     //Find all views and set Tag to all draggable views
