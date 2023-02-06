@@ -9,12 +9,14 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 
-public class Zona8_2_DialogoFelicitaciones extends DialogFragment {
+public class Zona8_2_DialogoFelicitaciones extends DialogFragment  {
 
-    private Zona8_2_DialogoFelicitaciones.OnDialogoConfirmacionListener listener;
+    private OnDialogoConfirmacionListener listener;
 
     @NonNull
     @Override
@@ -36,6 +38,17 @@ public class Zona8_2_DialogoFelicitaciones extends DialogFragment {
 
     public interface OnDialogoConfirmacionListener{
         void onPossitiveButtonClick(); //Eventos Botón Positivos
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try{
+            listener = (OnDialogoConfirmacionListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString() +
+                    " no Implemento OnDialogoConfirmacionListener");
+        }
     }
 
 

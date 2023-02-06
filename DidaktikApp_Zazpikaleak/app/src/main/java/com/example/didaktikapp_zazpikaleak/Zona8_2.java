@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, View.OnLongClickListener {
@@ -63,6 +64,8 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
             audioDindong.start();
         }
     }
+
+
 
 
     //Find all views and set Tag to all draggable views

@@ -5,6 +5,7 @@ import android.content.ClipDescription;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.DragEvent;
@@ -28,6 +29,7 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
     private FloatingActionButton duda;
     private Zona5_1_DialogoDuda dialogoDuda;
     private RelativeLayout zona5_1_dindon;
+    MediaPlayer audio;
 
 
     @Override
@@ -257,6 +259,8 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 if(bienPieza1 && bienPieza2 && bienPieza3 && bienPieza4 && bienPieza5 && bienPieza6 ){
                     btnSiguiente.setEnabled(true);
                     zona5_1_dindon.setVisibility(view.VISIBLE);
+                    audio = MediaPlayer.create(Zona5_1.this, R.raw.audio_zona1_dindongfeliz);
+                    audio.start();
                 }
 
 
