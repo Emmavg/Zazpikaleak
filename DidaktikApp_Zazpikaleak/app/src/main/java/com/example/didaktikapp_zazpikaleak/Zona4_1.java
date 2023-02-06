@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Zona4_1 extends AppCompatActivity {
-    private Button btnGrupos,btnComprobar, btnSiguiente;
+    private Button btnGrupos, btnComprobar;
     private EditText txtRima;
     private Zona4_1_DialogoGrupos dialogoGrupos;
     private RelativeLayout relativeDidon1 ;
-    private FloatingActionButton duda;
+    private FloatingActionButton duda, btnSiguiente;
     private Zona4_1_DialogoDuda dialogoDuda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

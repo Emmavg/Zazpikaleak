@@ -96,7 +96,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
 
 
     <!-- Strings Zona 4 -->
-    <string name="zonas4_1_pasos">Pasos: \n1.- Darle al boton para hacer los grupos \n2.-Escribir una rima que contega la palabra baldosa \n3.-Pulsar el boton comprobar</string>
+    <string name="zonas4_1_pasos">1.- Pulsar el botón para hacer los grupos \n\n2.-Escribir una rima que contega la palabra baldosa \n\n3.-Pulsar el botón comprobar</string>
 
 
     <string name="txtZona4_6_Titulo">La Baldosa de Bilbao</string>

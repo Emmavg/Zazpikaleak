@@ -64,6 +64,7 @@
                 android:backgroundTint="#5020C2"
                 android:src="@drawable/ic_ayuda"
                 app:fabSize="normal"
+                android:layout_marginLeft="10dp"
                 app:showMotionSpec="@android:anim/fade_in"
                 app:useCompatPadding="true" />
 
@@ -98,16 +99,19 @@
 
             </RelativeLayout>
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnZona4_1_Siguiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="20dp"
-                android:text="@string/btnZona1_Siguiente"
+
+                android:backgroundTint="#5020C2"
+                android:src="@drawable/ic_siguiente"
+                app:fabSize="normal"
+                android:layout_gravity="right"
                 android:visibility="invisible"
-                android:layout_gravity="end"/>
+                android:layout_marginRight="10dp"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true" />
 
         </LinearLayout>
     </ScrollView>
