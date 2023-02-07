@@ -109,7 +109,7 @@
                 android:src="@drawable/ic_siguiente"
                 app:fabSize="normal"
                 android:layout_gravity="right"
-                android:visibility="invisible"
+                android:visibility="visible"
                 android:layout_marginRight="10dp"
                 app:showMotionSpec="@android:anim/fade_in"
                 app:useCompatPadding="true" />

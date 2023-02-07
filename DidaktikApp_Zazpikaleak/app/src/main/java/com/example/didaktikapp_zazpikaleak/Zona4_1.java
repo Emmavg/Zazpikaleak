@@ -138,6 +138,7 @@ public class Zona4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(Zona4_1.this, Zona4_5.class);
                 startActivity(i);
+                finish();
             }
         });
     }
@@ -153,6 +154,7 @@ public class Zona4_1 extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(Zona4_1.this, MapaActivity.class);
         startActivity(intent);
+        finish();
     }
 
 

@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:enabled="false"
                 android:text="@string/btnZona3_2_ORDEN" />
 
@@ -60,6 +60,7 @@
                 android:backgroundTint="#5020C2"
                 android:src="@drawable/ic_ayuda"
                 app:fabSize="normal"
+                android:layout_marginLeft="30dp"
                 app:showMotionSpec="@android:anim/fade_in"
                 app:useCompatPadding="true" />
             <RelativeLayout
@@ -67,7 +68,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="30dp"
                 android:visibility="invisible">
 
                 <TextView
@@ -99,7 +99,7 @@
 
                 android:backgroundTint="#5020C2"
                 android:src="@drawable/ic_siguiente"
-                android:visibility="visible"
+                android:visibility="invisible"
                 app:fabCustomSize="70dp"
                 app:fabSize="normal"
                 app:showMotionSpec="@android:anim/fade_in"

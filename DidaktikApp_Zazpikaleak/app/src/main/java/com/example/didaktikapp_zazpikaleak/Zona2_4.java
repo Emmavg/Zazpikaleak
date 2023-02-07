@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +25,7 @@ public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDial
 
     private MediaPlayer audio, audioDindong;
     private ImageView imgZona2_4_Foto1,imgZona2_4_Foto2;
-    private Button btnZona2_4_Siguiente;
+    private FloatingActionButton btnZona2_4_Siguiente;
     private TextView txtZona2_4_Narrador_1, txtZona2_4_Narrador_2;
     private Zona2_5_Dialogo dialogo;
 
@@ -37,21 +39,9 @@ public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDial
         txtZona2_4_Narrador_1 = findViewById(R.id.txtZona2_4_Narrador_1);
         txtZona2_4_Narrador_2 = findViewById(R.id.txtZona2_4_Narrador_2);
 
-        final ScrollView scroller1 = findViewById(R.id.scrollerZona2_4_Narrador_1);
-        final ScrollView scroller2 = findViewById(R.id.scrollerZona2_4_Narrador_2);
-
-
         //Texto 1 Narrador
         txtZona2_4_Narrador_1.setMovementMethod(new ScrollingMovementMethod());
         setText(getString(R.string.txtZona2_4_Narrador_1),txtZona2_4_Narrador_1, 60);
-        scroller1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean hasFocus) {
-                if (hasFocus) {
-                    scroller1.fullScroll(View.FOCUS_DOWN);
-                }
-            }
-        });
 
         //Audio Narrador
         audio = MediaPlayer.create(Zona2_4.this, R.raw.audio_zona2_4_parte1);
@@ -68,14 +58,6 @@ public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDial
                 //Texto 1 Narrador
                 txtZona2_4_Narrador_2.setMovementMethod(new ScrollingMovementMethod());
                 setText(getString(R.string.txtZona2_4_Narrador_2),txtZona2_4_Narrador_2, 60);
-                scroller2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-                    @Override
-                    public void onFocusChange(View view, boolean hasFocus) {
-                        if (hasFocus) {
-                            scroller2.fullScroll(View.FOCUS_DOWN);
-                        }
-                    }
-                });
 
                 //Audio Narrador
                 audio = MediaPlayer.create(Zona2_4.this, R.raw.audio_zona2_4_parte2);
@@ -109,7 +91,15 @@ public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDial
     @Override
     public void onPossitiveButtonClick() {
         Intent intent = new Intent(Zona2_4.this, MapaActivity.class);
+
+        // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        ProgresoDao pd = new ProgresoDao();
+        pd.actHecha(zazpidbh,"Actividad 2");
+
         startActivity(intent);
+        finish();
+
     }
 
 
@@ -119,8 +109,12 @@ public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDial
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(Zona2_4.this, Zona2_1.class);
+        startActivity(intent);
+        finish();
         audio.stop();
     }
+
 
     //Se visualiza el texto palabra por palabra
     public void setText(final String s, TextView txt, int velocidad)

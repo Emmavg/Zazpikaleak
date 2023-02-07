@@ -143,6 +143,7 @@ public class Zona3_1 extends AppCompatActivity implements Zona3_1_Dialogo.OnDial
     public void onPossitiveButtonClick() {
         Intent intent = new Intent(Zona3_1.this, Zona3_2.class);
         startActivity(intent);
+        finish();
     }
 
 
@@ -153,6 +154,9 @@ public class Zona3_1 extends AppCompatActivity implements Zona3_1_Dialogo.OnDial
     public void onBackPressed() {
         super.onBackPressed();
         audio.stop();
+        Intent intent = new Intent(Zona3_1.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     //Se visualiza el texto palabra por palabra

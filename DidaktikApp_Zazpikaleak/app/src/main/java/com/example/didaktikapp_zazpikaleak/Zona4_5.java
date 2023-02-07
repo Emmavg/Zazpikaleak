@@ -52,5 +52,13 @@ public class Zona4_5 extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona4_5.this, Zona4_1.class);
+        startActivity(intent);
+        finish();
+    }
 }
 

@@ -70,5 +70,13 @@ public class Zona2_1 extends AppCompatActivity {
         }
     }
 
+    //Cuando se pulsa el boton back
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona2_1.this, MapaActivity.class);
+        startActivity(intent);
+    }
+
 
 }

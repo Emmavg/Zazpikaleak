@@ -47,9 +47,9 @@
 
     <string name="txtZona2_4_Titulo">El Arenal y la Iglesia de San Nicolas</string>
 
-    <string name="txtZona2_4_Narrador_1">La iglesia de San Nicolás se inauguró en el año 1756 y tardaron 13 años en construirla. En la fachada, es decir, la parte de fuera de la iglesia podemos encontrar la entrada principal y dos torres a cada lado.
+    <string name="txtZona2_4_Narrador_1">La Iglesia de San Nicolás se inauguró en el año 1756 y tardaron 13 años en construirla. En la fachada, es decir, la parte de fuera de la Iglesia, podemos encontrar la entrada principal y dos torres a cada lado.
 
-La zona donde estamos ahora mismo se llama El Arenal. ¿Por que creeis que se llama así? Pues su nombre se debe a que antiguamente fue una especie de playa donde paraban los barcos.</string>
+\n\nLa zona donde estamos ahora mismo se llama El Arenal. ¿Por qué creéis que se llama así? Pues su nombre se debe a que antiguamente fue una especie de playa donde paraban los barcos.</string>
 
 
     <string name="txtZona2_4_Narrador_2">Cuando aparecieron los barrios de alrededor, la playa se cerró y el lugar se llenó de jardines, bancos y fuentes. Más tarde, se empezaron a hacer carreteras y el paso del Metro por debajo del paseo.</string>
@@ -100,6 +100,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
 
 
     <string name="txtZona4_6_Titulo">La Baldosa de Bilbao</string>
+    <string name="txtZona4_6_TituloDibujo">Dibuja la Baldosa de Bilbao</string>
 
     <string name="txtZona4_6_Narrador_1">¿Sabéis que tiene de especial este suelo? La baldosa de Bilbao aparece en objetos como prendas de vestir, complementos, pasteles y en la canción que La Otxoa le dedicó que ya habéis escuchado.</string>
 

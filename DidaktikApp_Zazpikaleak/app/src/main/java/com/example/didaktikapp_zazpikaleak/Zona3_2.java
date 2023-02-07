@@ -49,11 +49,16 @@ public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDial
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
 
-        String[] arrAlumnos = {"Carmen", "Juan", "Iker", "Emma", "Miguel", "Airam", "Irune", "Xavi", "Xabi", "Javi", "Pablo"};
         ArrayList<String> listaAlumnos = new ArrayList<>();
-        for (String s : arrAlumnos) {
-            listaAlumnos.add(s);
-        }
+//        String[] arrAlumnos = {"Carmen", "Juan", "Iker", "Emma", "Miguel", "Airam", "Irune", "Xavi", "Xabi", "Javi", "Pablo"};
+//
+//        for (String s : arrAlumnos) {
+//            listaAlumnos.add(s);
+//        }
+
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(this, "ZazpikaleakDB", null, 1);
+        AlumnoDao ad = new AlumnoDao();
+        listaAlumnos = ad.cogerAlumnos(zazpidbh);
 
 //**************** Creamos una variable para saber cuántos grupos tenemos que hacer y hacemos un random de dichos alumnos ************************************
 
@@ -225,7 +230,14 @@ public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDial
     @Override
     public void onPossitiveButtonClick() {
         Intent intent = new Intent(Zona3_2.this, MapaActivity.class);
+
+        // Marcamos la actividad como hecha en la base de datos pasandole el nombre de la base de datos
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
+        ProgresoDao pd = new ProgresoDao();
+        pd.actHecha(zazpidbh,"Actividad 3");
+
         startActivity(intent);
+        finish();
     }
 
     private void abrirDialogo(String[] total) {
@@ -233,4 +245,12 @@ public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDial
         dialogoGrupos = new Zona3_2_DialogoGrupos(total);
         dialogoGrupos.show(fragmentManager, "Hacer Grupos");
     };
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona3_2.this, Zona3_1.class);
+        startActivity(intent);
+        finish();
+    }
 }
