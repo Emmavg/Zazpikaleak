@@ -27,6 +27,10 @@ public class Zona4_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        dialogoDuda = new Zona4_1_DialogoDuda();
+        dialogoDuda.show(fragmentManager, "Pasos Parada");
         setContentView(R.layout.activity_zona4_1);
 
         txtRima=findViewById(R.id.Zona4_1txtRima);
@@ -39,17 +43,22 @@ public class Zona4_1 extends AppCompatActivity {
 
 //*************************** Cogemos el array de la base de datos se lo pasamos a un arrayList ************************************
 
-        String[] arrAlumnos = {"Ana", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Maite", "Pablo"};
         ArrayList<String> listaAlumnos = new ArrayList<>();
-        for (String s : arrAlumnos) {
-            listaAlumnos.add(s);
-        }
+
+//        String[] arrAlumnos = {"Ana", "Juan", "Iker", "Emma", "Miguel", "Airam", "Alayn", "Xavi", "Xabi", "Maite", "Pablo"};
+//        for (String s : arrAlumnos) {
+//            listaAlumnos.add(s);
+//        }
+
+        ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(this, "ZazpikaleakDB", null, 1);
+        AlumnoDao ad = new AlumnoDao();
+        listaAlumnos = ad.cogerAlumnos(zazpidbh);
 
 //**************** Creamos una variable para saber cuántos grupos tenemos que hacer y hacemos un random de dichos alumnos ************************************
 
         ArrayList<String> alumnos = new ArrayList<>();
-        int cantGrupos = listaAlumnos.size() / 3;
-        if (listaAlumnos.size() % 3 != 0) {
+        int cantGrupos = listaAlumnos.size() / 2;
+        if (listaAlumnos.size() % 2 != 0) {
             cantGrupos++;
         }
 
@@ -137,6 +146,14 @@ public class Zona4_1 extends AppCompatActivity {
         dialogoGrupos = new Zona4_1_DialogoGrupos(total);
         dialogoGrupos.show(fragmentManager, "Hacer Grupos");
     };
+
+    //Cuando se pulsa el boton back
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona4_1.this, MapaActivity.class);
+        startActivity(intent);
+    }
 
 
 }

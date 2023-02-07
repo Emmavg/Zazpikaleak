@@ -57,13 +57,18 @@
                 android:layout_marginTop="10dp" />
 
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/zona2_1_btnCamara"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:text="@string/btnZona2_1_Camara" />
+
+                android:backgroundTint="#5020C2"
+                android:src="@drawable/ic_camara"
+                app:fabSize="normal"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true" />
 
             <RelativeLayout
                 android:id="@+id/zona2_1_dindon"
@@ -95,14 +100,19 @@
 
             </RelativeLayout>
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/zona2_1_btnSiguiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-                android:text="@string/btnZona1_Siguiente"></Button>
+
+                android:backgroundTint="#5020C2"
+                android:src="@drawable/ic_siguiente"
+                app:fabSize="normal"
+                android:layout_gravity="right"
+                android:visibility="invisible"
+                android:layout_marginRight="10dp"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true" />
 
         </LinearLayout>
 

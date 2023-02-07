@@ -12,9 +12,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Zona2_1 extends AppCompatActivity {
 
-    private Button zona2_1_btnCamara, zona2_1_btnSiguiente;
+    private FloatingActionButton zona2_1_btnCamara, zona2_1_btnSiguiente;
     private ImageView zona2_1_imgView;
     private RelativeLayout dindon;
     private MediaPlayer audio;
@@ -34,6 +36,7 @@ public class Zona2_1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Zona2_1.this, Zona2_4.class);
                 startActivity(intent);
+                finish();
             }
         });
 
