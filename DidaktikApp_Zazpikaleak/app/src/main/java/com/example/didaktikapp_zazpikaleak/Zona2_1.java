@@ -76,6 +76,7 @@ public class Zona2_1 extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(Zona2_1.this, MapaActivity.class);
         startActivity(intent);
+        audio.stop();
     }
 
 

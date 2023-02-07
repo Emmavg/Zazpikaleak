@@ -107,7 +107,7 @@ public class Zona6_4 extends AppCompatActivity {
                 ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
                 ProgresoDao pd = new ProgresoDao();
                 pd.actHecha(zazpidbh,"Actividad 6");
-
+                audio.stop();
                 startActivity(intent);
                 finish();
             }

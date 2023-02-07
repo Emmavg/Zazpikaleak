@@ -65,7 +65,6 @@ public class Zona1_5 extends AppCompatActivity {
                 ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
                 ProgresoDao pd = new ProgresoDao();
                 pd.actHecha(zazpidbh,"Actividad 11");
-
                 startActivity(intent);
                 finish();
             }
