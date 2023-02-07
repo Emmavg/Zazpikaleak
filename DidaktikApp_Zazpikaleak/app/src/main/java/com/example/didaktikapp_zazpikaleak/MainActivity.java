@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements MainActivity_Dial
         //Abrimos la base de datos con nombre: ZazpikaleakDB en modo de escritura solo lo haces la primera vez
         ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(this, "ZazpikaleakDB", null, 1);
         ProgresoDao pd = new ProgresoDao();
-        //pd.crearBBDD(zazpidbh);
+        pd.crearBBDD(zazpidbh);
 
         titulo = findViewById(R.id.inicial_txt);
         empezar = findViewById(R.id.btnEmpezar);
