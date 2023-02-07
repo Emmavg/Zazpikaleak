@@ -14,17 +14,21 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Zona4_5 extends AppCompatActivity {
 
     private static Lienzo lienzo;
 
-    private Button btnZona4_5_Siguiente;
+    private FloatingActionButton btnZona4_5_Siguiente;
+    private Button borrar;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zona4_5);
 
         btnZona4_5_Siguiente = findViewById(R.id.btnZona4_5_Siguiente);
+        borrar = findViewById(R.id.btnZona4_5_Borrar);
 
         lienzo = (Lienzo)findViewById(R.id.layZona4_5_lienzo);
 
@@ -37,6 +41,16 @@ public class Zona4_5 extends AppCompatActivity {
                 finish();
             }
         });
+
+
+        borrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(getIntent());
+            }
+        });
+
     }
 }
 
