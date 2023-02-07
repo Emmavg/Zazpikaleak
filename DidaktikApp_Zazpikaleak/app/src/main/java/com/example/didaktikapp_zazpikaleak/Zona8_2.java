@@ -71,7 +71,7 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
 
     public void onPossitiveButtonClick(){
         audioDindong.stop();
-        Intent intent = new Intent(Zona8_2.this, MainActivity.class);
+        Intent intent = new Intent(Zona8_2.this, MapaActivity.class);
         startActivity(intent);
         finish();
 
