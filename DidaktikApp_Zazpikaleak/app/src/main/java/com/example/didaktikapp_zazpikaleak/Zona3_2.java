@@ -21,9 +21,10 @@ import java.util.HashMap;
 
 public class Zona3_2 extends AppCompatActivity implements Zona3_2_Dialogo.OnDialogoConfirmacionListener{
 
-    private Button btnGrupos, btnOrden, btnComprobar, btnZona3_2_Siguiente;
+    private Button btnGrupos, btnOrden, btnComprobar;
     private TextView txtleyenda;
     private Zona3_2_DialogoGrupos dialogoGrupos;
+    private FloatingActionButton btnZona3_2_Siguiente;
     private FloatingActionButton duda;
     private RelativeLayout rlayout;
     private MediaPlayer audio;

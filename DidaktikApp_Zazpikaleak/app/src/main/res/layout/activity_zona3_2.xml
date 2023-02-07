@@ -90,16 +90,20 @@
 
             </RelativeLayout>
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnZona3_2_Siguiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="20dp"
-                android:text="@string/btnZona1_Siguiente"
-                android:visibility="invisible"
-                android:layout_gravity="end"/>
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+
+                android:backgroundTint="#5020C2"
+                android:src="@drawable/ic_siguiente"
+                android:visibility="visible"
+                app:fabCustomSize="70dp"
+                app:fabSize="normal"
+                app:showMotionSpec="@android:anim/fade_in"
+                app:useCompatPadding="true" />
 
 
         </LinearLayout>

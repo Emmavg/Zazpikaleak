@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +25,7 @@ public class Zona3_1 extends AppCompatActivity implements Zona3_1_Dialogo.OnDial
 
     private MediaPlayer audio;
     private ImageView imgZona3_1_Foto1,imgZona3_1_Foto2,imgZona3_1_Foto3,imgZona3_1_Foto4, imgZona3_1_Foto5;
-    private Button btnZona3_1_Siguiente;
+    private FloatingActionButton btnZona3_1_Siguiente;
     private TextView txtZona3_1_Narrador_1, txtZona3_1_Narrador_2, txtZona3_1_Narrador_3;
     private Zona3_1_Dialogo dialogo;
 
