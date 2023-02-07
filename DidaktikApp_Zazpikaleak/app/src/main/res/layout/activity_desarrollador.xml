@@ -55,16 +55,4 @@
         android:layout_height="wrap_content"
         android:text="Final"/>
 
-    <Button
-        android:id="@+id/desarrollador_btn9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
-
-    <Button
-        android:id="@+id/desarrollador_btn10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Libre Disposicion"/>
-
 </LinearLayout>

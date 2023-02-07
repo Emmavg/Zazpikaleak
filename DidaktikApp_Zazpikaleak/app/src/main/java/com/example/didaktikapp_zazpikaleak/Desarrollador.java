@@ -24,9 +24,6 @@ public class Desarrollador extends AppCompatActivity {
         btn6 = findViewById(R.id.desarrollador_btn6);
         btn7 = findViewById(R.id.desarrollador_btn7);
         btn8 = findViewById(R.id.desarrollador_btn8);
-        btn9 = findViewById(R.id.desarrollador_btn9);
-        btn10 = findViewById(R.id.desarrollador_btn10);
-
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -12,8 +12,6 @@ import androidx.fragment.app.DialogFragment;
 
 public class Zona8_2_DialogoDuda extends DialogFragment {
 
-    private Zona8_2_DialogoDuda.OnDialogoConfirmacionListener listener;
-
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -31,9 +29,4 @@ public class Zona8_2_DialogoDuda extends DialogFragment {
 
         return builder.create();
     }
-
-    public interface OnDialogoConfirmacionListener{
-        void onPossitiveButtonClick(); //Eventos Botón Positivos
-    }
-
 }
