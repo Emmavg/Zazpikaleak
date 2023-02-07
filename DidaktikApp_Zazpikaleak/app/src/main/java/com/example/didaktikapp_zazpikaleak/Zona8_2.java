@@ -36,6 +36,9 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        dialogoDuda = new Zona8_2_DialogoDuda();
+        dialogoDuda.show(fragmentManager, "Pasos Parada");
         setContentView(R.layout.activity_zona8_2);
         findViews();
         implementEvents();
@@ -56,7 +59,7 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
     }
 
     private void checkAciertos(){
-        if(contAciertos == 1){
+        if(contAciertos == 8){
             FragmentManager fragmentManager = getSupportFragmentManager();
             dialogoFelicitaciones = new Zona8_2_DialogoFelicitaciones();
             dialogoFelicitaciones.show(fragmentManager, "Felicidades");
@@ -72,6 +75,14 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
         startActivity(intent);
         finish();
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona8_2.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 
@@ -214,17 +225,6 @@ public class Zona8_2 extends AppCompatActivity implements  View.OnDragListener, 
                 // Gets the text data from the item.
                 String dragData = item.getText().toString();
 
-
-
-
-
-
-                // Invalidates the view to force a redraw
-               // view.invalidate();
-
-//                View v = (View) event.getLocalState();
-//                ViewGroup owner = (ViewGroup) v.getParent();
-//                owner.removeView(v);//remove the dragged view
                 LinearLayout container = (LinearLayout) view;//caste the view into LinearLayout as our drag acceptable layout is LinearLayout
 //                //container.addView(v);//Add the dragged view
 //              //  v.setVisibility(View.VISIBLE);//finally set Visibility to VISIBLE

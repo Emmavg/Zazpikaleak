@@ -67,10 +67,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        android:gravity="bottom">
+        >
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/ayudaMapa"
@@ -80,6 +80,21 @@
             android:backgroundTint="#5020C2"
             android:src="@drawable/ic_ayuda"
             app:fabSize="normal"
+            android:layout_gravity="bottom"
+            app:showMotionSpec="@android:anim/fade_in"
+            app:useCompatPadding="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/actFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#5020C2"
+            android:src="@drawable/ic_act_final"
+            app:fabSize="normal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:visibility="invisible"
             app:showMotionSpec="@android:anim/fade_in"
             app:useCompatPadding="true" />
     </LinearLayout>

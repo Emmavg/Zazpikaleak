@@ -92,7 +92,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtZona3_2Dingdong">¡Me ha encantado vuestra leyenda!</string>
 
 
-    <string name="txtZona3_2Dingdong_parte2">Como ya habéis leído todas vuestras leyendas, ¡podemos pasar a la siguiente parada!</string>
+    <string name="txtZona3_2Dingdong_parte2">Como ya habéis leído todas vuestras leyendas, ¡Podemos pasar a la siguiente parada!</string>
 
 
     <!-- Strings Zona 4 -->
@@ -122,7 +122,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
 
     <!-- Strings Zona 6 -->
 
-    <string name="txtZona6_2Dingdong">Buscas pesonas para que respondan estas preguntas. La respuesta de cada pregunta esta debajo de ella. Si acierta pulasd el botón verde, en caso de fallo pulsad el botón rojo que contará los fallos en esa pregunta. Solo una por persona</string>
+    <string name="txtZona6_2Dingdong">Debes buscar diferentes personas por la calle para que respondan estas preguntas. \n\nLa respuesta de cada pregunta está debajo de ella. \n\nSi acierta deberás pulsar el botón verde para pasar a la siguiente, en caso contrario, pulsa el botón rojo que contará los fallos en esa pregunta. \n\nSolo una por persona</string>
 
     <string name="txtZona6_4_Titulo">Calle Pelota y la Hucha de los Txikiteros</string>
 
@@ -158,7 +158,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="Zona8_2_HuchaDeTxikitero">Hucha de Txikitero</string>
     <string name="Zona8_2_TeatroArriaga">Teatro Arriaga</string>
     <string name="Zona8_2_PlazaNueva">Plaza Nueva</string>
-    <string name="zonas8_2_pasos">Pasos: \n1.-Mantener el dedo en el texto que quieres mover \n2.-Soltar el dedo en la zona que lo quieres soltar(Si se Pone verde esque lo has hecho bien)</string>
+    <string name="zonas8_2_pasos">1.-Mantener pulsado el texto que quieres mover \n\n2.-Arrastrar y soltar el texto en la imagen que elijas (Si se pone verde es que lo has hecho bien)</string>
     <string name="zonas8_2_felcicitaciones">    ¡Enhorabuena, eres capaz de reconocer el patrimonio del Casco Viejo!
         Ahora, ya sabes lo que esconde esta zona de Bilbao.</string>
 
@@ -171,6 +171,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="aniadirAlumnos">Nuevo Jugador</string>
     <string name="nombreJugador">Nombre</string>
     <string name="txtBorrrarAlumno">¿Quieres eliminar el alumno seleccionado?</string>
+    <string name="txtMapa_Final">ENHORABUENAA!!! \n\nHas completado todas las paradas. Acabas de desbloquear la actividad final</string>
     >>>>>>> master
 
 

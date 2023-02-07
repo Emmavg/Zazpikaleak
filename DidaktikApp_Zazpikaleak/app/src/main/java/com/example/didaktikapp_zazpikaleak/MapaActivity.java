@@ -21,7 +21,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.didaktikapp_zazpikaleak.databinding.ActivityMapaBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MapaActivity extends FragmentActivity implements OnMapReadyCallback, MapaActivity_Dialogo.OnDialogoConfirmacionListener {
+public class MapaActivity extends FragmentActivity implements OnMapReadyCallback, MapaActivity_Dialogo.OnDialogoConfirmacionListener, MapaActivity_DialogoFinal.OnDialogoConfirmacionListener {
 
     private GoogleMap mMap;
     private ActivityMapaBinding binding;
@@ -29,8 +29,10 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
     private String titulo = "";
     private TextView contAct;
     private MapaActivity_Dialogo dialogo;
-    private FloatingActionButton ayuda;
+    private MapaActivity_DialogoFinal dialogoFinal;
+    private FloatingActionButton ayuda, btnFinal;
     private boolean inicio = false;
+    private boolean actFinal = false;
 
 
     @Override
@@ -41,10 +43,12 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(binding.getRoot());
         contAct = findViewById(R.id.contadorActividades);
         ayuda = findViewById(R.id.ayudaMapa);
+        btnFinal = findViewById(R.id.actFinal);
 
         ZazpiKaleakSQLiteHelper zazpidbh = new ZazpiKaleakSQLiteHelper(getBaseContext(), "ZazpikaleakDB", null, 1);
         ProgresoDao pd = new ProgresoDao();
 
+        // Para que salga solo el diálogo de ayuda del mapa una vez
         if(pd.actividadesHechas(zazpidbh) == 0 && !inicio) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             dialogo = new MapaActivity_Dialogo();
@@ -52,11 +56,31 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
             inicio = true;
         }
 
+        // Diálogo que aparece cuando desbloqueas la actividad final
+        if (pd.actividadesHechas(zazpidbh) == 8 && !actFinal){
+            actFinal = true;
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            dialogoFinal = new MapaActivity_DialogoFinal();
+            dialogoFinal.show(fragmentManager, "Juego final");
+        }
+
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        btnFinal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MapaActivity.this, Zona8_2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        // Botón de ayuda
         ayuda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,12 +93,20 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     @Override
+    public void onPossitiveButtonClickJugar() {
+        btnFinal.setVisibility(View.VISIBLE);
+    }
+
+
+    @Override
     public void onPossitiveButtonClick() {
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
+
 
     /**
      * Manipulates the map once available.
@@ -274,5 +306,4 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
 
         marker.showInfoWindow();
     }
-
 }
