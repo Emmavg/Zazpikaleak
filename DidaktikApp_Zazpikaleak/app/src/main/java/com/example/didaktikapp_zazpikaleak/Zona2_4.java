@@ -115,12 +115,6 @@ public class Zona2_4 extends AppCompatActivity implements Zona2_5_Dialogo.OnDial
 
 
 
-
-
-
-
-
-
     //Parar el audio cuando se pulsa el boton back
     @Override
     public void onBackPressed() {
