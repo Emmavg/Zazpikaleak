@@ -73,7 +73,7 @@
 
     <string name="txtZona3_1_Narrador_3">Este chico se ahogó en las inundaciones que hubo en el siglo XVII, pero ¿sabéis que hubo nuevas inundaciones más recientemente? Durante la tarde y noche del 26 de Agosto de 1983 y celebrándose la Aste Nagusia de Bilbao, llovió mucho y la ría se desbordó.
 Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de barro y hubo gente que murió o acabó con heridas graves. Aunque hubo mucha gente que ayudó, tardaron muchos días en limpiarlo todo.</string>
-    <string name="zona3_1_pasos">Pasos: \n1.- Darle al botón para hacer los grupos \n2.-Escribir una leyenda que contega las palabras barro, peces y puente \n3.-Pulsar el botón orden para saber el orden que tenéis que leer \n4.- Leer la leyenda</string>
+    <string name="zona3_1_pasos">Pulsar el botón para hacer los grupos \n\n2.-Escribir una leyenda que contega las palabras barro, peces y puente \n\n3.-Pulsar el botón orden para saber el orden que tenéis que leer \n\n4.- Leer la leyenda</string>
     <string name="btnZona3_2_HACER_LOS_GRUPOS">Hacer los grupos</string>
     <string name="btnZona3_2_Escribe_leyenda">Escribe la leyenda</string>
     <string name="btnZona3_2_ORDEN">Orden</string>
@@ -115,7 +115,7 @@ Subió el nivel del agua varios metros, las calles se inundaron, se llenaron de 
     <string name="txtZona5_2_Narrador_1">¿Qué sabéis sobre Marijaia? Marijaia es el icono de Aste Nagusia. Lleva los brazos en alto para representar que siempre está bailando. Cada año se crea una nueva Marijaia. \n\nSu momento más importante es en el txupinazo, cuando aparece cada año para presentarse a la gente y dar inicio a las fiestas.
         \n\nPero podéis ver a Marijaia otros días también, ya que Marijaia puede ser encontrada por todo Bilbao, sacándose fotografías. \n\nEl último día de fiestas, queman a Marijaia durante un paseo por la Ría.</string>
 
-    <string name="zonas5_1_pasos">Pasos: \n1.-Mantener el dedo en la pieza que quieres mover \n2.-Soltar el dedo en la zona que lo quieres soltar(Solo se quedara si esta bien)</string>
+    <string name="zonas5_1_pasos">1.-Mantener pulsada la pieza que quieres mover \n\n2.-Arrastrar y soltar la pieza en la zona que elijas (Solo se quedará si está bien)</string>
 
     <string name="zona5_1puzzle_de_marijaia">Puzzle de Marijaia</string>
 

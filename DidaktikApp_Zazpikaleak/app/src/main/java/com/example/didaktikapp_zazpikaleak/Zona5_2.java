@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -22,7 +24,7 @@ public class Zona5_2 extends AppCompatActivity {
 
     private MediaPlayer audio;
     private ImageView imgZona5_2_Foto1,imgZona5_2_Foto2,imgZona5_2_Foto3;
-    private Button btnZona5_2_Siguiente;
+    private FloatingActionButton btnZona5_2_Siguiente;
     private TextView txtZona5_2_Narrador_1;
 
     @Override

@@ -19,14 +19,15 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.Map;
+
 public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, View.OnLongClickListener {
 
     private static final String TAG = Zona5_1.class.getSimpleName();
     private ImageView imgPieza1,imgPieza2,imgPieza3,imgPieza4,imgPieza5,imgPieza6;
     private View vaux,pieza1,pieza2,pieza3,pieza4,pieza5,pieza6;
-    private Button btnSiguiente;
     private boolean bienPieza1,bienPieza2,bienPieza3,bienPieza4,bienPieza5,bienPieza6;
-    private FloatingActionButton duda;
+    private FloatingActionButton duda, btnSiguiente;
     private Zona5_1_DialogoDuda dialogoDuda;
     private RelativeLayout zona5_1_dindon;
     MediaPlayer audio;
@@ -35,10 +36,14 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        dialogoDuda = new Zona5_1_DialogoDuda();
+        dialogoDuda.show(fragmentManager, "Pasos Parada");
+
         setContentView(R.layout.activity_zona5_1);
         findViews();
         implementEvents();
-        btnSiguiente.setEnabled(false);
 
         duda = findViewById(R.id.btnDuda);
 
@@ -53,9 +58,11 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
             }
         });
     }
+
     public void Siguiente(View v){
         Intent i = new Intent(Zona5_1.this, Zona5_2.class);
         startActivity(i);
+        finish();
     }
     //Find all views and set Tag to all draggable views
     private void findViews() {
@@ -150,31 +157,13 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
             case DragEvent.ACTION_DRAG_STARTED:
                 // Determines if this View can accept the dragged data
                 if (event.getClipDescription().hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN)) {
-                    // if you want to apply color when drag started to your view you can uncomment below lines
-                    // to give any color tint to the View to indicate that it can accept
-                    // data.
-
-                    //  view.getBackground().setColorFilter(Color.BLUE, PorterDuff.Mode.SRC_IN);//set background color to your view
-
-                    // Invalidate the view to force a redraw in the new tint
-                    //  view.invalidate();
-
-                    // returns true to indicate that the View can accept the dragged data.
                     return true;
 
                 }
 
-                // Returns false. During the current drag and drop operation, this View will
-                // not receive events again until ACTION_DRAG_ENDED is sent.
                 return false;
 
             case DragEvent.ACTION_DRAG_ENTERED:
-                // Applies a YELLOW or any color tint to the View, when the dragged view entered into drag acceptable view
-                // Return true; the return value is ignored.
-
-              //  view.getBackground().setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_IN);
-
-                // Invalidate the view to force a redraw in the new tint
                 view.invalidate();
 
                 return true;
@@ -257,23 +246,12 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                     }
                 }
                 if(bienPieza1 && bienPieza2 && bienPieza3 && bienPieza4 && bienPieza5 && bienPieza6 ){
-                    btnSiguiente.setEnabled(true);
+                    btnSiguiente.setVisibility(view.VISIBLE);
                     zona5_1_dindon.setVisibility(view.VISIBLE);
                     audio = MediaPlayer.create(Zona5_1.this, R.raw.audio_zona1_dindongfeliz);
                     audio.start();
                 }
 
-
-
-
-//                View v = (View) event.getLocalState();
-//                ViewGroup owner = (ViewGroup) v.getParent();
-//                owner.removeView(v);//remove the dragged view
-//
-//                container.addView(v);//Add the dragged view
-//                v.setVisibility(View.VISIBLE);//finally set Visibility to VISIBLE
-
-                // Returns true. DragEvent.getResult() will return true.
                 return true;
             case DragEvent.ACTION_DRAG_ENDED:
                 // Turns off any color tinting
@@ -281,14 +259,6 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
 
                 // Invalidates the view to force a redraw
                 view.invalidate();
-
-                // Does a getResult(), and displays what happened.
-
-
-
-
-                // returns true; the value is ignored.
-               // imgPieza1.setVisibility(view.VISIBLE);
                 return true;
 
             // An unknown action type was received.
@@ -297,6 +267,14 @@ public class Zona5_1 extends AppCompatActivity implements  View.OnDragListener, 
                 break;
         }
         return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Zona5_1.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 

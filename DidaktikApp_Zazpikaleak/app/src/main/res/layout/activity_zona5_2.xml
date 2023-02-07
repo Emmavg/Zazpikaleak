@@ -92,7 +92,7 @@
                 android:layout_marginRight="20dp"
                 android:foregroundGravity="right"
                 android:backgroundTint="#5020C2"
-                android:visibility="invisible"
+                android:visibility="visible"
                 android:src="@drawable/ic_siguiente"
                 app:fabSize="normal"
                 app:showMotionSpec="@android:anim/fade_in"
