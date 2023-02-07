@@ -57,7 +57,7 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         // Diálogo que aparece cuando desbloqueas la actividad final
-        if (pd.actividadesHechas(zazpidbh) == 8 && !actFinal){
+        if ( pd.actividadesHechas(zazpidbh) == 8 && !actFinal){
             actFinal = true;
             FragmentManager fragmentManager = getSupportFragmentManager();
             dialogoFinal = new MapaActivity_DialogoFinal();
